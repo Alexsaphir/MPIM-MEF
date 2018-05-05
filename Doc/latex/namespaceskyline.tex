@@ -1,0 +1,294 @@
+\hypertarget{namespaceskyline}{}\section{Référence du module skyline}
+\label{namespaceskyline}\index{skyline@{skyline}}
+
+
+Ce module permet de stocker une matrice sous la forme d\textquotesingle{}une matrice Skyline (profil)  
+
+
+\subsection*{Les types de données}
+\begin{DoxyCompactItemize}
+\item 
+type \hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+type(\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix}) function \hyperlink{namespaceskyline_a5fe1d351df2e3a07f96028d1d2a892a8}{create\+\_\+skyline\+\_\+matrix} (m, n)
+\begin{DoxyCompactList}\small\item\em Créé une matrice S\+K\+Y\+L\+I\+NE vide de dimension $(m,n)$. \end{DoxyCompactList}\item 
+type(\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix}) function \hyperlink{namespaceskyline_a86a4fe28bc106ef42d25cf7596c108bf}{create\+\_\+skyline\+\_\+matrix\+\_\+from\+\_\+file} (filename)
+\begin{DoxyCompactList}\small\item\em Créé une matrice S\+K\+Y\+L\+I\+NE depuis les données contenus dans un fichier. \end{DoxyCompactList}\item 
+subroutine \hyperlink{namespaceskyline_a3377a8391ad2d61659689fc8c4130bdc}{write\+\_\+skyline\+\_\+matrix\+\_\+to\+\_\+file} (M, filename)
+\begin{DoxyCompactList}\small\item\em Sauvegarde une matrice S\+K\+Y\+L\+I\+NE dans un fichier. \end{DoxyCompactList}\item 
+subroutine \hyperlink{namespaceskyline_a583c70b26e3bcb37ecb679f5c11ec2f4}{free\+\_\+skyline\+\_\+matrix} (M)
+\begin{DoxyCompactList}\small\item\em Supprime les allocations mémoires d\textquotesingle{}une matrice S\+K\+Y\+L\+I\+NE. \end{DoxyCompactList}\item 
+real function \hyperlink{namespaceskyline_a28077ec6714b830771f90da1b674b0ce}{get} (M, row, col)
+\begin{DoxyCompactList}\small\item\em Accède aux éléments d\textquotesingle{}une matrice S\+K\+Y\+L\+I\+NE. \end{DoxyCompactList}\item 
+integer function \hyperlink{namespaceskyline_a25b1e027d99abb67ab844d7b657a5843}{position\+\_\+on\+\_\+s} (M, row, col)
+\begin{DoxyCompactList}\small\item\em Calcule la position d\textquotesingle{}un élément dans le tableau stockant les données. \end{DoxyCompactList}\item 
+integer function \hyperlink{namespaceskyline_a9f07218be321c12bea1d84f6b629e346}{number\+\_\+item\+\_\+on\+\_\+line} (M, row)
+\begin{DoxyCompactList}\small\item\em Calcule le nombre d\textquotesingle{}élément stocké sur une ligne. \end{DoxyCompactList}\item 
+subroutine \hyperlink{namespaceskyline_a428818245223fbf6e3a5a2264f8f1a65}{display} (M)
+\begin{DoxyCompactList}\small\item\em Affiche une matrice S\+K\+Y\+L\+I\+NE. \end{DoxyCompactList}\item 
+subroutine \hyperlink{namespaceskyline_aedb0d55aecd5f4cae4dc3593a5e89f0f}{display\+\_\+debug} (M)
+\begin{DoxyCompactList}\small\item\em Affiche des informations de debuguage d\textquotesingle{}une matrice S\+K\+Y\+L\+I\+NE. \end{DoxyCompactList}\item 
+real function, dimension(\+:), allocatable \hyperlink{namespaceskyline_ae156a973c4a30bd2740af6ef2fdfa1d9}{prod\+\_\+mat\+\_\+vec} (M, X)
+\begin{DoxyCompactList}\small\item\em Calcule Le produit entre une matrice et un vecteur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Ce module permet de stocker une matrice sous la forme d\textquotesingle{}une matrice Skyline (profil) 
+
+\begin{DoxyAuthor}{Auteur}
+Kara Abdelhadi, Mechineau Alexandre 
+\end{DoxyAuthor}
+
+
+\subsection{Documentation de la fonction/subroutine}
+\mbox{\Hypertarget{namespaceskyline_a5fe1d351df2e3a07f96028d1d2a892a8}\label{namespaceskyline_a5fe1d351df2e3a07f96028d1d2a892a8}} 
+\index{skyline@{skyline}!create\+\_\+skyline\+\_\+matrix@{create\+\_\+skyline\+\_\+matrix}}
+\index{create\+\_\+skyline\+\_\+matrix@{create\+\_\+skyline\+\_\+matrix}!skyline@{skyline}}
+\subsubsection{\texorpdfstring{create\+\_\+skyline\+\_\+matrix()}{create\_skyline\_matrix()}}
+{\footnotesize\ttfamily type(\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix}) function skyline\+::create\+\_\+skyline\+\_\+matrix (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+Créé une matrice S\+K\+Y\+L\+I\+NE vide de dimension $(m,n)$. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em m} & Nombre de ligne \\
+\hline
+{\em n} & Nombre de colonne \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Matrice S\+K\+Y\+L\+I\+NE 
+\end{DoxyReturn}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceskyline_a5fe1d351df2e3a07f96028d1d2a892a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceskyline_a86a4fe28bc106ef42d25cf7596c108bf}\label{namespaceskyline_a86a4fe28bc106ef42d25cf7596c108bf}} 
+\index{skyline@{skyline}!create\+\_\+skyline\+\_\+matrix\+\_\+from\+\_\+file@{create\+\_\+skyline\+\_\+matrix\+\_\+from\+\_\+file}}
+\index{create\+\_\+skyline\+\_\+matrix\+\_\+from\+\_\+file@{create\+\_\+skyline\+\_\+matrix\+\_\+from\+\_\+file}!skyline@{skyline}}
+\subsubsection{\texorpdfstring{create\+\_\+skyline\+\_\+matrix\+\_\+from\+\_\+file()}{create\_skyline\_matrix\_from\_file()}}
+{\footnotesize\ttfamily type (\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix}) function skyline\+::create\+\_\+skyline\+\_\+matrix\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{filename }\end{DoxyParamCaption})}
+
+
+
+Créé une matrice S\+K\+Y\+L\+I\+NE depuis les données contenus dans un fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em filename} & Nom du fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Matrice S\+K\+Y\+L\+I\+NE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceskyline_a428818245223fbf6e3a5a2264f8f1a65}\label{namespaceskyline_a428818245223fbf6e3a5a2264f8f1a65}} 
+\index{skyline@{skyline}!display@{display}}
+\index{display@{display}!skyline@{skyline}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily subroutine skyline\+::display (\begin{DoxyParamCaption}\item[{class(\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix}), intent(in)}]{M }\end{DoxyParamCaption})}
+
+
+
+Affiche une matrice S\+K\+Y\+L\+I\+NE. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em M} & Matrice S\+K\+Y\+L\+I\+NE \\
+\hline
+\end{DoxyParams}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceskyline_a428818245223fbf6e3a5a2264f8f1a65_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceskyline_aedb0d55aecd5f4cae4dc3593a5e89f0f}\label{namespaceskyline_aedb0d55aecd5f4cae4dc3593a5e89f0f}} 
+\index{skyline@{skyline}!display\+\_\+debug@{display\+\_\+debug}}
+\index{display\+\_\+debug@{display\+\_\+debug}!skyline@{skyline}}
+\subsubsection{\texorpdfstring{display\+\_\+debug()}{display\_debug()}}
+{\footnotesize\ttfamily subroutine skyline\+::display\+\_\+debug (\begin{DoxyParamCaption}\item[{class(\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix}), intent(in)}]{M }\end{DoxyParamCaption})}
+
+
+
+Affiche des informations de debuguage d\textquotesingle{}une matrice S\+K\+Y\+L\+I\+NE. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em M} & Matrice S\+K\+Y\+L\+I\+NE \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespaceskyline_a583c70b26e3bcb37ecb679f5c11ec2f4}\label{namespaceskyline_a583c70b26e3bcb37ecb679f5c11ec2f4}} 
+\index{skyline@{skyline}!free\+\_\+skyline\+\_\+matrix@{free\+\_\+skyline\+\_\+matrix}}
+\index{free\+\_\+skyline\+\_\+matrix@{free\+\_\+skyline\+\_\+matrix}!skyline@{skyline}}
+\subsubsection{\texorpdfstring{free\+\_\+skyline\+\_\+matrix()}{free\_skyline\_matrix()}}
+{\footnotesize\ttfamily subroutine skyline\+::free\+\_\+skyline\+\_\+matrix (\begin{DoxyParamCaption}\item[{type(\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix})}]{M }\end{DoxyParamCaption})}
+
+
+
+Supprime les allocations mémoires d\textquotesingle{}une matrice S\+K\+Y\+L\+I\+NE. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em M} & Matrice S\+K\+Y\+L\+I\+NE \\
+\hline
+\end{DoxyParams}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{namespaceskyline_a583c70b26e3bcb37ecb679f5c11ec2f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceskyline_a28077ec6714b830771f90da1b674b0ce}\label{namespaceskyline_a28077ec6714b830771f90da1b674b0ce}} 
+\index{skyline@{skyline}!get@{get}}
+\index{get@{get}!skyline@{skyline}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily real function skyline\+::get (\begin{DoxyParamCaption}\item[{class(\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix}), intent(in)}]{M,  }\item[{integer, intent(in)}]{row,  }\item[{integer, intent(in)}]{col }\end{DoxyParamCaption})}
+
+
+
+Accède aux éléments d\textquotesingle{}une matrice S\+K\+Y\+L\+I\+NE. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em M} & Matrice S\+K\+Y\+L\+I\+NE \\
+\hline
+{\em row} & Ligne de l\textquotesingle{}élément \\
+\hline
+{\em col} & Colonne de l\textquotesingle{}élément \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Valeur de M(i,j) 
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceskyline_a28077ec6714b830771f90da1b674b0ce_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{namespaceskyline_a28077ec6714b830771f90da1b674b0ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceskyline_a9f07218be321c12bea1d84f6b629e346}\label{namespaceskyline_a9f07218be321c12bea1d84f6b629e346}} 
+\index{skyline@{skyline}!number\+\_\+item\+\_\+on\+\_\+line@{number\+\_\+item\+\_\+on\+\_\+line}}
+\index{number\+\_\+item\+\_\+on\+\_\+line@{number\+\_\+item\+\_\+on\+\_\+line}!skyline@{skyline}}
+\subsubsection{\texorpdfstring{number\+\_\+item\+\_\+on\+\_\+line()}{number\_item\_on\_line()}}
+{\footnotesize\ttfamily integer function skyline\+::number\+\_\+item\+\_\+on\+\_\+line (\begin{DoxyParamCaption}\item[{class(\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix}), intent(in)}]{M,  }\item[{integer, intent(in)}]{row }\end{DoxyParamCaption})}
+
+
+
+Calcule le nombre d\textquotesingle{}élément stocké sur une ligne. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em M} & Matrice S\+K\+Y\+L\+I\+NE \\
+\hline
+{\em row} & Indice de ligne \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Nombre d\textquotesingle{}élément stocké sur une ligne 
+\end{DoxyReturn}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceskyline_a9f07218be321c12bea1d84f6b629e346_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceskyline_a25b1e027d99abb67ab844d7b657a5843}\label{namespaceskyline_a25b1e027d99abb67ab844d7b657a5843}} 
+\index{skyline@{skyline}!position\+\_\+on\+\_\+s@{position\+\_\+on\+\_\+s}}
+\index{position\+\_\+on\+\_\+s@{position\+\_\+on\+\_\+s}!skyline@{skyline}}
+\subsubsection{\texorpdfstring{position\+\_\+on\+\_\+s()}{position\_on\_s()}}
+{\footnotesize\ttfamily integer function skyline\+::position\+\_\+on\+\_\+s (\begin{DoxyParamCaption}\item[{class(\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix}), intent(in)}]{M,  }\item[{integer, intent(in)}]{row,  }\item[{integer, intent(in)}]{col }\end{DoxyParamCaption})}
+
+
+
+Calcule la position d\textquotesingle{}un élément dans le tableau stockant les données. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em M} & Matrice S\+K\+Y\+L\+I\+NE \\
+\hline
+{\em row} & Ligne de l\textquotesingle{}élément \\
+\hline
+{\em col} & Colonne de l\textquotesingle{}élément \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Indice de l\textquotesingle{}élément dans le tableau de donnée 
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{namespaceskyline_a25b1e027d99abb67ab844d7b657a5843_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceskyline_a25b1e027d99abb67ab844d7b657a5843_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceskyline_ae156a973c4a30bd2740af6ef2fdfa1d9}\label{namespaceskyline_ae156a973c4a30bd2740af6ef2fdfa1d9}} 
+\index{skyline@{skyline}!prod\+\_\+mat\+\_\+vec@{prod\+\_\+mat\+\_\+vec}}
+\index{prod\+\_\+mat\+\_\+vec@{prod\+\_\+mat\+\_\+vec}!skyline@{skyline}}
+\subsubsection{\texorpdfstring{prod\+\_\+mat\+\_\+vec()}{prod\_mat\_vec()}}
+{\footnotesize\ttfamily real function, dimension(\+:), allocatable skyline\+::prod\+\_\+mat\+\_\+vec (\begin{DoxyParamCaption}\item[{class(\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix})}]{M,  }\item[{real, dimension(\+:), allocatable}]{X }\end{DoxyParamCaption})}
+
+
+
+Calcule Le produit entre une matrice et un vecteur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em M} & Matrice S\+K\+Y\+L\+I\+NE \\
+\hline
+{\em X} & Vecteur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Vecteur = M$\ast$X 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceskyline_a3377a8391ad2d61659689fc8c4130bdc}\label{namespaceskyline_a3377a8391ad2d61659689fc8c4130bdc}} 
+\index{skyline@{skyline}!write\+\_\+skyline\+\_\+matrix\+\_\+to\+\_\+file@{write\+\_\+skyline\+\_\+matrix\+\_\+to\+\_\+file}}
+\index{write\+\_\+skyline\+\_\+matrix\+\_\+to\+\_\+file@{write\+\_\+skyline\+\_\+matrix\+\_\+to\+\_\+file}!skyline@{skyline}}
+\subsubsection{\texorpdfstring{write\+\_\+skyline\+\_\+matrix\+\_\+to\+\_\+file()}{write\_skyline\_matrix\_to\_file()}}
+{\footnotesize\ttfamily subroutine skyline\+::write\+\_\+skyline\+\_\+matrix\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{type (\hyperlink{structskyline_1_1skyline__matrix}{skyline\+\_\+matrix})}]{M,  }\item[{character(len=$\ast$), intent(in)}]{filename }\end{DoxyParamCaption})}
+
+
+
+Sauvegarde une matrice S\+K\+Y\+L\+I\+NE dans un fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em M} & Matrice à sauvegarder \\
+\hline
+{\em filename} & Nom du fichier \\
+\hline
+\end{DoxyParams}

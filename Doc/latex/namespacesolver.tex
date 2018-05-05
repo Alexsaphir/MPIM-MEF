@@ -1,0 +1,537 @@
+\hypertarget{namespacesolver}{}\section{Référence du module solver}
+\label{namespacesolver}\index{solver@{solver}}
+
+
+Ce module permet de résoudre un problème d\textquotesingle{}éléments fini.  
+
+
+\subsection*{Fonctions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real function \hyperlink{namespacesolver_ab0081bb7880652eb26e65994f13fcb54}{a} (x)
+\begin{DoxyCompactList}\small\item\em Fonction A(x) du problème donné \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_a6f4d43c88c7c8ebdea64bd45e002af05}{f} (x)
+\begin{DoxyCompactList}\small\item\em Fonction F(x) du problème donné \end{DoxyCompactList}\item 
+logical function \hyperlink{namespacesolver_a2380e35eaa6fcef040f90bb5b23baa6a}{is\+\_\+in\+\_\+interval} (x, xmin, xmax)
+\begin{DoxyCompactList}\small\item\em Calcule si une valeur est dans un intervalle donné \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_a3323b7ad7f72685a465733177c82e8cc}{phi} (i, x, h, Xdiscret)
+\begin{DoxyCompactList}\small\item\em Fonction de base. \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_add1e5803b09e373fde46731960030e42}{phi\+\_\+der} (i, x, h, Xdiscret)
+\begin{DoxyCompactList}\small\item\em Dérivée de la fonction de base. \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af}{trapza} (binf, bsup, N)
+\begin{DoxyCompactList}\small\item\em Calcul de l\textquotesingle{}intégrale du terme bilinéaire. \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_adb6590794b23eaed708cd2e42adac550}{trapzf} (binf, bsup, N, ix, hx, Xdiscret)
+\begin{DoxyCompactList}\small\item\em Calcul de l\textquotesingle{}intégrale du terme Linéaire. \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_a99565d1c8ed5142211b78fe3ccca060b}{b} (i, j, h, Xdiscret, Nitg)
+\begin{DoxyCompactList}\small\item\em Evaluation du terme bilinéaire. \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_a327c990a10263590618db7a31c4edcc9}{l} (i, h, Xdiscret, Nitg, alpha1)
+\begin{DoxyCompactList}\small\item\em Evaluation du terme Linéaire. \end{DoxyCompactList}\item 
+type(skyline\+\_\+matrix) function \hyperlink{namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d}{create\+\_\+stiffness\+\_\+matrix} (h, Xdiscret, Nitg)
+\begin{DoxyCompactList}\small\item\em Calcul la matrice de rigidité \end{DoxyCompactList}\item 
+real function, dimension(\+:), allocatable \hyperlink{namespacesolver_af45a5f246a818112e6a257335c2b829d}{create\+\_\+f\+\_\+matrix} (h, Xdiscret, Nitg, alpha1)
+\begin{DoxyCompactList}\small\item\em Calcule du second membre. \end{DoxyCompactList}\item 
+real function, dimension(\+:), allocatable \hyperlink{namespacesolver_ad8b8ef6c982475b3fb276f93660b750f}{solve\+\_\+trig\+\_\+down} (LT, BB)
+\begin{DoxyCompactList}\small\item\em Résouds le système triangulaire inférieur. \end{DoxyCompactList}\item 
+real function, dimension(\+:), allocatable \hyperlink{namespacesolver_a08b8f70c86d7bf39b32ce8fdcc872fd4}{solve\+\_\+trig\+\_\+up} (LT, BB)
+\begin{DoxyCompactList}\small\item\em Résouds le système triangulaire supérieur. \end{DoxyCompactList}\item 
+real function, dimension(\+:), allocatable \hyperlink{namespacesolver_af3691d2059a024a82bab7751a99e6006}{solve} (LT, BB)
+\begin{DoxyCompactList}\small\item\em Résouds le problème $ LT*Y = BB$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Ce module permet de résoudre un problème d\textquotesingle{}éléments fini. 
+
+\begin{DoxyAuthor}{Auteur}
+Kara Abdelhadi, Mechineau Alexandre 
+\end{DoxyAuthor}
+
+
+\subsection{Documentation de la fonction/subroutine}
+\mbox{\Hypertarget{namespacesolver_ab0081bb7880652eb26e65994f13fcb54}\label{namespacesolver_ab0081bb7880652eb26e65994f13fcb54}} 
+\index{solver@{solver}!a@{a}}
+\index{a@{a}!solver@{solver}}
+\subsubsection{\texorpdfstring{a()}{a()}}
+{\footnotesize\ttfamily real function solver\+::a (\begin{DoxyParamCaption}\item[{real}]{x }\end{DoxyParamCaption})}
+
+
+
+Fonction A(x) du problème donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & Réel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+A(x) 
+\end{DoxyReturn}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_ab0081bb7880652eb26e65994f13fcb54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_a99565d1c8ed5142211b78fe3ccca060b}\label{namespacesolver_a99565d1c8ed5142211b78fe3ccca060b}} 
+\index{solver@{solver}!b@{b}}
+\index{b@{b}!solver@{solver}}
+\subsubsection{\texorpdfstring{b()}{b()}}
+{\footnotesize\ttfamily real function solver\+::b (\begin{DoxyParamCaption}\item[{integer}]{i,  }\item[{integer}]{j,  }\item[{real}]{h,  }\item[{real, dimension(\+:), allocatable}]{Xdiscret,  }\item[{integer}]{Nitg }\end{DoxyParamCaption})}
+
+
+
+Evaluation du terme bilinéaire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em i} & Indice Ligne \\
+\hline
+{\em j} & Indice colonne \\
+\hline
+{\em h} & Pas du maillage \\
+\hline
+{\em Xdiscret} & Maillage \\
+\hline
+{\em Nitg} & Précision intégration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacesolver_a99565d1c8ed5142211b78fe3ccca060b_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_a99565d1c8ed5142211b78fe3ccca060b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_af45a5f246a818112e6a257335c2b829d}\label{namespacesolver_af45a5f246a818112e6a257335c2b829d}} 
+\index{solver@{solver}!create\+\_\+f\+\_\+matrix@{create\+\_\+f\+\_\+matrix}}
+\index{create\+\_\+f\+\_\+matrix@{create\+\_\+f\+\_\+matrix}!solver@{solver}}
+\subsubsection{\texorpdfstring{create\+\_\+f\+\_\+matrix()}{create\_f\_matrix()}}
+{\footnotesize\ttfamily real function, dimension(\+:), allocatable solver\+::create\+\_\+f\+\_\+matrix (\begin{DoxyParamCaption}\item[{real}]{h,  }\item[{real, dimension(\+:), allocatable}]{Xdiscret,  }\item[{integer}]{Nitg,  }\item[{real}]{alpha1 }\end{DoxyParamCaption})}
+
+
+
+Calcule du second membre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em h} & Pas du maillage \\
+\hline
+{\em Xdiscret} & Maillage \\
+\hline
+{\em Nitg} & Précision intégration \\
+\hline
+{\em alpha1} & Parametre du problème \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Matrice S\+K\+Y\+L\+I\+NE 
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_af45a5f246a818112e6a257335c2b829d_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{namespacesolver_af45a5f246a818112e6a257335c2b829d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d}\label{namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d}} 
+\index{solver@{solver}!create\+\_\+stiffness\+\_\+matrix@{create\+\_\+stiffness\+\_\+matrix}}
+\index{create\+\_\+stiffness\+\_\+matrix@{create\+\_\+stiffness\+\_\+matrix}!solver@{solver}}
+\subsubsection{\texorpdfstring{create\+\_\+stiffness\+\_\+matrix()}{create\_stiffness\_matrix()}}
+{\footnotesize\ttfamily type(skyline\+\_\+matrix) function solver\+::create\+\_\+stiffness\+\_\+matrix (\begin{DoxyParamCaption}\item[{real}]{h,  }\item[{real, dimension(\+:), allocatable}]{Xdiscret,  }\item[{integer}]{Nitg }\end{DoxyParamCaption})}
+
+
+
+Calcul la matrice de rigidité 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em h} & Pas du maillage \\
+\hline
+{\em Xdiscret} & Maillage \\
+\hline
+{\em Nitg} & Précision intégration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Matrice S\+K\+Y\+L\+I\+NE 
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_a6f4d43c88c7c8ebdea64bd45e002af05}\label{namespacesolver_a6f4d43c88c7c8ebdea64bd45e002af05}} 
+\index{solver@{solver}!f@{f}}
+\index{f@{f}!solver@{solver}}
+\subsubsection{\texorpdfstring{f()}{f()}}
+{\footnotesize\ttfamily real function solver\+::f (\begin{DoxyParamCaption}\item[{real}]{x }\end{DoxyParamCaption})}
+
+
+
+Fonction F(x) du problème donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & Réel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+F(x) 
+\end{DoxyReturn}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_a6f4d43c88c7c8ebdea64bd45e002af05_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_a2380e35eaa6fcef040f90bb5b23baa6a}\label{namespacesolver_a2380e35eaa6fcef040f90bb5b23baa6a}} 
+\index{solver@{solver}!is\+\_\+in\+\_\+interval@{is\+\_\+in\+\_\+interval}}
+\index{is\+\_\+in\+\_\+interval@{is\+\_\+in\+\_\+interval}!solver@{solver}}
+\subsubsection{\texorpdfstring{is\+\_\+in\+\_\+interval()}{is\_in\_interval()}}
+{\footnotesize\ttfamily logical function solver\+::is\+\_\+in\+\_\+interval (\begin{DoxyParamCaption}\item[{real}]{x,  }\item[{real}]{xmin,  }\item[{real}]{xmax }\end{DoxyParamCaption})}
+
+
+
+Calcule si une valeur est dans un intervalle donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & Valeur \\
+\hline
+{\em xmin} & Borne inf de l\textquotesingle{}intervalle \\
+\hline
+{\em xmax} & Borne max de l\textquotesingle{}intervalle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+L\+O\+G\+I\+C\+AL 
+\end{DoxyReturn}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_a2380e35eaa6fcef040f90bb5b23baa6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_a327c990a10263590618db7a31c4edcc9}\label{namespacesolver_a327c990a10263590618db7a31c4edcc9}} 
+\index{solver@{solver}!l@{l}}
+\index{l@{l}!solver@{solver}}
+\subsubsection{\texorpdfstring{l()}{l()}}
+{\footnotesize\ttfamily real function solver\+::l (\begin{DoxyParamCaption}\item[{integer}]{i,  }\item[{real}]{h,  }\item[{real, dimension(\+:), allocatable}]{Xdiscret,  }\item[{integer}]{Nitg,  }\item[{real}]{alpha1 }\end{DoxyParamCaption})}
+
+
+
+Evaluation du terme Linéaire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em i} & Indice ligne \\
+\hline
+{\em h} & Pas du maillage \\
+\hline
+{\em Xdiscret} & Maillage \\
+\hline
+{\em Nitg} & Précision intégration \\
+\hline
+{\em alpha1} & Parametre du problème \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_a327c990a10263590618db7a31c4edcc9_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_a327c990a10263590618db7a31c4edcc9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_a3323b7ad7f72685a465733177c82e8cc}\label{namespacesolver_a3323b7ad7f72685a465733177c82e8cc}} 
+\index{solver@{solver}!phi@{phi}}
+\index{phi@{phi}!solver@{solver}}
+\subsubsection{\texorpdfstring{phi()}{phi()}}
+{\footnotesize\ttfamily real function solver\+::phi (\begin{DoxyParamCaption}\item[{integer}]{i,  }\item[{real}]{x,  }\item[{real}]{h,  }\item[{real, dimension(\+:), allocatable}]{Xdiscret }\end{DoxyParamCaption})}
+
+
+
+Fonction de base. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em i} & Indice de la fonction \\
+\hline
+{\em x} & Valeur d\textquotesingle{}évaluation \\
+\hline
+{\em h} & Pas de discrétisation \\
+\hline
+{\em Xdiscret} & Maillage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Evaluation de $PHI_i$ en x 
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{namespacesolver_a3323b7ad7f72685a465733177c82e8cc_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_a3323b7ad7f72685a465733177c82e8cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_add1e5803b09e373fde46731960030e42}\label{namespacesolver_add1e5803b09e373fde46731960030e42}} 
+\index{solver@{solver}!phi\+\_\+der@{phi\+\_\+der}}
+\index{phi\+\_\+der@{phi\+\_\+der}!solver@{solver}}
+\subsubsection{\texorpdfstring{phi\+\_\+der()}{phi\_der()}}
+{\footnotesize\ttfamily real function solver\+::phi\+\_\+der (\begin{DoxyParamCaption}\item[{integer}]{i,  }\item[{real}]{x,  }\item[{real}]{h,  }\item[{real, dimension(\+:), allocatable}]{Xdiscret }\end{DoxyParamCaption})}
+
+
+
+Dérivée de la fonction de base. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em i} & Indice de la fonction \\
+\hline
+{\em x} & Valeur d\textquotesingle{}évaluation \\
+\hline
+{\em h} & Pas de discrétisation \\
+\hline
+{\em Xdiscret} & Maillage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Evaluation de la dérivée de $PHI_i$ en x 
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{namespacesolver_add1e5803b09e373fde46731960030e42_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_af3691d2059a024a82bab7751a99e6006}\label{namespacesolver_af3691d2059a024a82bab7751a99e6006}} 
+\index{solver@{solver}!solve@{solve}}
+\index{solve@{solve}!solver@{solver}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily real function, dimension(\+:), allocatable solver\+::solve (\begin{DoxyParamCaption}\item[{type(skyline\+\_\+matrix)}]{LT,  }\item[{real, dimension(\+:), allocatable}]{BB }\end{DoxyParamCaption})}
+
+
+
+Résouds le problème $ LT*Y = BB$. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em LT} & Matrice S\+K\+Y\+L\+I\+NE \\
+\hline
+{\em BB} & second membre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Vecteur Solution 
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{namespacesolver_af3691d2059a024a82bab7751a99e6006_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{namespacesolver_af3691d2059a024a82bab7751a99e6006_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_ad8b8ef6c982475b3fb276f93660b750f}\label{namespacesolver_ad8b8ef6c982475b3fb276f93660b750f}} 
+\index{solver@{solver}!solve\+\_\+trig\+\_\+down@{solve\+\_\+trig\+\_\+down}}
+\index{solve\+\_\+trig\+\_\+down@{solve\+\_\+trig\+\_\+down}!solver@{solver}}
+\subsubsection{\texorpdfstring{solve\+\_\+trig\+\_\+down()}{solve\_trig\_down()}}
+{\footnotesize\ttfamily real function, dimension(\+:), allocatable solver\+::solve\+\_\+trig\+\_\+down (\begin{DoxyParamCaption}\item[{type(skyline\+\_\+matrix)}]{LT,  }\item[{real, dimension(\+:), allocatable}]{BB }\end{DoxyParamCaption})}
+
+
+
+Résouds le système triangulaire inférieur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em LT} & Matrice S\+K\+Y\+L\+I\+NE \\
+\hline
+{\em BB} & second membre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Vecteur Solution 
+\end{DoxyReturn}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_ad8b8ef6c982475b3fb276f93660b750f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_a08b8f70c86d7bf39b32ce8fdcc872fd4}\label{namespacesolver_a08b8f70c86d7bf39b32ce8fdcc872fd4}} 
+\index{solver@{solver}!solve\+\_\+trig\+\_\+up@{solve\+\_\+trig\+\_\+up}}
+\index{solve\+\_\+trig\+\_\+up@{solve\+\_\+trig\+\_\+up}!solver@{solver}}
+\subsubsection{\texorpdfstring{solve\+\_\+trig\+\_\+up()}{solve\_trig\_up()}}
+{\footnotesize\ttfamily real function, dimension(\+:), allocatable solver\+::solve\+\_\+trig\+\_\+up (\begin{DoxyParamCaption}\item[{type(skyline\+\_\+matrix)}]{LT,  }\item[{real, dimension(\+:), allocatable}]{BB }\end{DoxyParamCaption})}
+
+
+
+Résouds le système triangulaire supérieur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em LT} & Matrice S\+K\+Y\+L\+I\+NE \\
+\hline
+{\em BB} & second membre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Vecteur Solution 
+\end{DoxyReturn}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_a08b8f70c86d7bf39b32ce8fdcc872fd4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af}\label{namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af}} 
+\index{solver@{solver}!trapza@{trapza}}
+\index{trapza@{trapza}!solver@{solver}}
+\subsubsection{\texorpdfstring{trapza()}{trapza()}}
+{\footnotesize\ttfamily real function solver\+::trapza (\begin{DoxyParamCaption}\item[{real}]{binf,  }\item[{real}]{bsup,  }\item[{integer}]{N }\end{DoxyParamCaption})}
+
+
+
+Calcul de l\textquotesingle{}intégrale du terme bilinéaire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em binf} & Borne inf \\
+\hline
+{\em bsup} & Borne sup \\
+\hline
+{\em N} & Précision de l\textquotesingle{}intégrale \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Valeur de l\textquotesingle{}intégrale 
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesolver_adb6590794b23eaed708cd2e42adac550}\label{namespacesolver_adb6590794b23eaed708cd2e42adac550}} 
+\index{solver@{solver}!trapzf@{trapzf}}
+\index{trapzf@{trapzf}!solver@{solver}}
+\subsubsection{\texorpdfstring{trapzf()}{trapzf()}}
+{\footnotesize\ttfamily real function solver\+::trapzf (\begin{DoxyParamCaption}\item[{real}]{binf,  }\item[{real}]{bsup,  }\item[{integer}]{N,  }\item[{integer}]{ix,  }\item[{real}]{hx,  }\item[{real, dimension(\+:), allocatable}]{Xdiscret }\end{DoxyParamCaption})}
+
+
+
+Calcul de l\textquotesingle{}intégrale du terme Linéaire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em binf} & Borne inf \\
+\hline
+{\em bsup} & Borne sup \\
+\hline
+{\em N} & Précision de l\textquotesingle{}intégrale \\
+\hline
+{\em ix} & Indice de la fonction P\+HI \\
+\hline
+{\em hx} & Pas du maillage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Valeur de l\textquotesingle{}intégrale 
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_adb6590794b23eaed708cd2e42adac550_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesolver_adb6590794b23eaed708cd2e42adac550_icgraph}
+\end{center}
+\end{figure}

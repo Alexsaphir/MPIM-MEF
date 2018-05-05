@@ -1,0 +1,5 @@
+<map id="skyline::display" name="skyline::display">
+<area shape="rect" id="node2" href="$namespaceskyline.html#a28077ec6714b830771f90da1b674b0ce" title="Accède aux éléments d&#39;une matrice SKYLINE. " alt="" coords="165,13,255,39"/>
+<area shape="rect" id="node3" href="$namespaceskyline.html#a25b1e027d99abb67ab844d7b657a5843" title="Calcule la position d&#39;un élément dans le tableau stockant les données. " alt="" coords="303,13,453,39"/>
+<area shape="rect" id="node4" href="$namespaceskyline.html#a9f07218be321c12bea1d84f6b629e346" title="Calcule le nombre d&#39;élément stocké sur une ligne. " alt="" coords="501,5,648,47"/>
+</map>

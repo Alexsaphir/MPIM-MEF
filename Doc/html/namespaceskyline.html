@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Solveur Elements Finis/Skyline Matrix: Référence du module skyline</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Solveur Elements Finis/Skyline Matrix
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Use a sparse matrix storage and Cholesky decomposition to solve a finite elements problems.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Les types de données</a> &#124;
+<a href="#func-members">Fonctions/Subroutines</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du module skyline</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ce module permet de stocker une matrice sous la forme d'une matrice Skyline (profil)  
+<a href="#details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Les types de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">type &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions/Subroutines</h2></td></tr>
+<tr class="memitem:a5fe1d351df2e3a07f96028d1d2a892a8"><td class="memItemLeft" align="right" valign="top">type(<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>) function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a5fe1d351df2e3a07f96028d1d2a892a8">create_skyline_matrix</a> (m, n)</td></tr>
+<tr class="memdesc:a5fe1d351df2e3a07f96028d1d2a892a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Créé une matrice SKYLINE vide de dimension <img class="formulaInl" alt="$(m,n)$" src="form_0.png"/>.  <a href="#a5fe1d351df2e3a07f96028d1d2a892a8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5fe1d351df2e3a07f96028d1d2a892a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a4fe28bc106ef42d25cf7596c108bf"><td class="memItemLeft" align="right" valign="top">type(<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>) function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a86a4fe28bc106ef42d25cf7596c108bf">create_skyline_matrix_from_file</a> (filename)</td></tr>
+<tr class="memdesc:a86a4fe28bc106ef42d25cf7596c108bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Créé une matrice SKYLINE depuis les données contenus dans un fichier.  <a href="#a86a4fe28bc106ef42d25cf7596c108bf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a86a4fe28bc106ef42d25cf7596c108bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3377a8391ad2d61659689fc8c4130bdc"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a3377a8391ad2d61659689fc8c4130bdc">write_skyline_matrix_to_file</a> (M, filename)</td></tr>
+<tr class="memdesc:a3377a8391ad2d61659689fc8c4130bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sauvegarde une matrice SKYLINE dans un fichier.  <a href="#a3377a8391ad2d61659689fc8c4130bdc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3377a8391ad2d61659689fc8c4130bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583c70b26e3bcb37ecb679f5c11ec2f4"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a583c70b26e3bcb37ecb679f5c11ec2f4">free_skyline_matrix</a> (M)</td></tr>
+<tr class="memdesc:a583c70b26e3bcb37ecb679f5c11ec2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime les allocations mémoires d'une matrice SKYLINE.  <a href="#a583c70b26e3bcb37ecb679f5c11ec2f4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a583c70b26e3bcb37ecb679f5c11ec2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28077ec6714b830771f90da1b674b0ce"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a28077ec6714b830771f90da1b674b0ce">get</a> (M, row, col)</td></tr>
+<tr class="memdesc:a28077ec6714b830771f90da1b674b0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accède aux éléments d'une matrice SKYLINE.  <a href="#a28077ec6714b830771f90da1b674b0ce">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a28077ec6714b830771f90da1b674b0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b1e027d99abb67ab844d7b657a5843"><td class="memItemLeft" align="right" valign="top">integer function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a25b1e027d99abb67ab844d7b657a5843">position_on_s</a> (M, row, col)</td></tr>
+<tr class="memdesc:a25b1e027d99abb67ab844d7b657a5843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la position d'un élément dans le tableau stockant les données.  <a href="#a25b1e027d99abb67ab844d7b657a5843">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a25b1e027d99abb67ab844d7b657a5843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f07218be321c12bea1d84f6b629e346"><td class="memItemLeft" align="right" valign="top">integer function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a9f07218be321c12bea1d84f6b629e346">number_item_on_line</a> (M, row)</td></tr>
+<tr class="memdesc:a9f07218be321c12bea1d84f6b629e346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule le nombre d'élément stocké sur une ligne.  <a href="#a9f07218be321c12bea1d84f6b629e346">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9f07218be321c12bea1d84f6b629e346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428818245223fbf6e3a5a2264f8f1a65"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a428818245223fbf6e3a5a2264f8f1a65">display</a> (M)</td></tr>
+<tr class="memdesc:a428818245223fbf6e3a5a2264f8f1a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche une matrice SKYLINE.  <a href="#a428818245223fbf6e3a5a2264f8f1a65">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a428818245223fbf6e3a5a2264f8f1a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb0d55aecd5f4cae4dc3593a5e89f0f"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#aedb0d55aecd5f4cae4dc3593a5e89f0f">display_debug</a> (M)</td></tr>
+<tr class="memdesc:aedb0d55aecd5f4cae4dc3593a5e89f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche des informations de debuguage d'une matrice SKYLINE.  <a href="#aedb0d55aecd5f4cae4dc3593a5e89f0f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aedb0d55aecd5f4cae4dc3593a5e89f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae156a973c4a30bd2740af6ef2fdfa1d9"><td class="memItemLeft" align="right" valign="top">real function, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#ae156a973c4a30bd2740af6ef2fdfa1d9">prod_mat_vec</a> (M, X)</td></tr>
+<tr class="memdesc:ae156a973c4a30bd2740af6ef2fdfa1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule Le produit entre une matrice et un vecteur.  <a href="#ae156a973c4a30bd2740af6ef2fdfa1d9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae156a973c4a30bd2740af6ef2fdfa1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ce module permet de stocker une matrice sous la forme d'une matrice Skyline (profil) </p>
+<dl class="section author"><dt>Auteur</dt><dd>Kara Abdelhadi, Mechineau Alexandre </dd></dl>
+</div><h2 class="groupheader">Documentation de la fonction/subroutine</h2>
+<a id="a5fe1d351df2e3a07f96028d1d2a892a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe1d351df2e3a07f96028d1d2a892a8">&#9670;&nbsp;</a></span>create_skyline_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>) function skyline::create_skyline_matrix </td>
+          <td>(</td>
+          <td class="paramtype">integer, intent(in)&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Créé une matrice SKYLINE vide de dimension <img class="formulaInl" alt="$(m,n)$" src="form_0.png"/>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Nombre de ligne </td></tr>
+    <tr><td class="paramname">n</td><td>Nombre de colonne </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Matrice SKYLINE </dd></dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceskyline_a5fe1d351df2e3a07f96028d1d2a892a8_icgraph.png" border="0" usemap="#namespaceskyline_a5fe1d351df2e3a07f96028d1d2a892a8_icgraph" alt=""/></div>
+<map name="namespaceskyline_a5fe1d351df2e3a07f96028d1d2a892a8_icgraph" id="namespaceskyline_a5fe1d351df2e3a07f96028d1d2a892a8_icgraph">
+<area shape="rect" id="node2" href="namespacecholesky__mod.html#a1cbaf08b2c159febf9d4a76d7819a1cd" title="Calcule la décompostion de Cholesky d&#39;une matrice de type SKYLINE. " alt="" coords="208,5,375,32"/>
+<area shape="rect" id="node4" href="namespacesolver.html#aefd2f88bd66b9d9ccce170259a49c77d" title="Calcul la matrice de rigidité " alt="" coords="212,57,371,98"/>
+<area shape="rect" id="node3" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="423,35,473,61"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a86a4fe28bc106ef42d25cf7596c108bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a4fe28bc106ef42d25cf7596c108bf">&#9670;&nbsp;</a></span>create_skyline_matrix_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type (<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>) function skyline::create_skyline_matrix_from_file </td>
+          <td>(</td>
+          <td class="paramtype">character(len=*), intent(in)&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Créé une matrice SKYLINE depuis les données contenus dans un fichier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Nom du fichier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Matrice SKYLINE </dd></dl>
+
+</div>
+</div>
+<a id="a428818245223fbf6e3a5a2264f8f1a65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a428818245223fbf6e3a5a2264f8f1a65">&#9670;&nbsp;</a></span>display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">subroutine skyline::display </td>
+          <td>(</td>
+          <td class="paramtype">class(<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>), intent(in)&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche une matrice SKYLINE. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>Matrice SKYLINE </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceskyline_a428818245223fbf6e3a5a2264f8f1a65_cgraph.png" border="0" usemap="#namespaceskyline_a428818245223fbf6e3a5a2264f8f1a65_cgraph" alt=""/></div>
+<map name="namespaceskyline_a428818245223fbf6e3a5a2264f8f1a65_cgraph" id="namespaceskyline_a428818245223fbf6e3a5a2264f8f1a65_cgraph">
+<area shape="rect" id="node2" href="namespaceskyline.html#a28077ec6714b830771f90da1b674b0ce" title="Accède aux éléments d&#39;une matrice SKYLINE. " alt="" coords="165,13,255,39"/>
+<area shape="rect" id="node3" href="namespaceskyline.html#a25b1e027d99abb67ab844d7b657a5843" title="Calcule la position d&#39;un élément dans le tableau stockant les données. " alt="" coords="303,13,453,39"/>
+<area shape="rect" id="node4" href="namespaceskyline.html#a9f07218be321c12bea1d84f6b629e346" title="Calcule le nombre d&#39;élément stocké sur une ligne. " alt="" coords="501,5,648,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aedb0d55aecd5f4cae4dc3593a5e89f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb0d55aecd5f4cae4dc3593a5e89f0f">&#9670;&nbsp;</a></span>display_debug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">subroutine skyline::display_debug </td>
+          <td>(</td>
+          <td class="paramtype">class(<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>), intent(in)&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche des informations de debuguage d'une matrice SKYLINE. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>Matrice SKYLINE </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a583c70b26e3bcb37ecb679f5c11ec2f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a583c70b26e3bcb37ecb679f5c11ec2f4">&#9670;&nbsp;</a></span>free_skyline_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">subroutine skyline::free_skyline_matrix </td>
+          <td>(</td>
+          <td class="paramtype">type(<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>)&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime les allocations mémoires d'une matrice SKYLINE. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>Matrice SKYLINE </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceskyline_a583c70b26e3bcb37ecb679f5c11ec2f4_icgraph.png" border="0" usemap="#namespaceskyline_a583c70b26e3bcb37ecb679f5c11ec2f4_icgraph" alt=""/></div>
+<map name="namespaceskyline_a583c70b26e3bcb37ecb679f5c11ec2f4_icgraph" id="namespaceskyline_a583c70b26e3bcb37ecb679f5c11ec2f4_icgraph">
+<area shape="rect" id="node2" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="195,13,245,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a28077ec6714b830771f90da1b674b0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28077ec6714b830771f90da1b674b0ce">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function skyline::get </td>
+          <td>(</td>
+          <td class="paramtype">class(<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>), intent(in)&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)&#160;</td>
+          <td class="paramname"><em>col</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accède aux éléments d'une matrice SKYLINE. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>Matrice SKYLINE </td></tr>
+    <tr><td class="paramname">row</td><td>Ligne de l'élément </td></tr>
+    <tr><td class="paramname">col</td><td>Colonne de l'élément </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Valeur de M(i,j) </dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceskyline_a28077ec6714b830771f90da1b674b0ce_cgraph.png" border="0" usemap="#namespaceskyline_a28077ec6714b830771f90da1b674b0ce_cgraph" alt=""/></div>
+<map name="namespaceskyline_a28077ec6714b830771f90da1b674b0ce_cgraph" id="namespaceskyline_a28077ec6714b830771f90da1b674b0ce_cgraph">
+<area shape="rect" id="node2" href="namespaceskyline.html#a25b1e027d99abb67ab844d7b657a5843" title="Calcule la position d&#39;un élément dans le tableau stockant les données. " alt="" coords="143,13,293,39"/>
+<area shape="rect" id="node3" href="namespaceskyline.html#a9f07218be321c12bea1d84f6b629e346" title="Calcule le nombre d&#39;élément stocké sur une ligne. " alt="" coords="341,5,488,47"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceskyline_a28077ec6714b830771f90da1b674b0ce_icgraph.png" border="0" usemap="#namespaceskyline_a28077ec6714b830771f90da1b674b0ce_icgraph" alt=""/></div>
+<map name="namespaceskyline_a28077ec6714b830771f90da1b674b0ce_icgraph" id="namespaceskyline_a28077ec6714b830771f90da1b674b0ce_icgraph">
+<area shape="rect" id="node2" href="namespaceskyline.html#a428818245223fbf6e3a5a2264f8f1a65" title="Affiche une matrice SKYLINE. " alt="" coords="143,5,255,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9f07218be321c12bea1d84f6b629e346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f07218be321c12bea1d84f6b629e346">&#9670;&nbsp;</a></span>number_item_on_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer function skyline::number_item_on_line </td>
+          <td>(</td>
+          <td class="paramtype">class(<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>), intent(in)&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)&#160;</td>
+          <td class="paramname"><em>row</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule le nombre d'élément stocké sur une ligne. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>Matrice SKYLINE </td></tr>
+    <tr><td class="paramname">row</td><td>Indice de ligne </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Nombre d'élément stocké sur une ligne </dd></dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceskyline_a9f07218be321c12bea1d84f6b629e346_icgraph.png" border="0" usemap="#namespaceskyline_a9f07218be321c12bea1d84f6b629e346_icgraph" alt=""/></div>
+<map name="namespaceskyline_a9f07218be321c12bea1d84f6b629e346_icgraph" id="namespaceskyline_a9f07218be321c12bea1d84f6b629e346_icgraph">
+<area shape="rect" id="node2" href="namespaceskyline.html#a25b1e027d99abb67ab844d7b657a5843" title="Calcule la position d&#39;un élément dans le tableau stockant les données. " alt="" coords="200,13,351,39"/>
+<area shape="rect" id="node3" href="namespaceskyline.html#a28077ec6714b830771f90da1b674b0ce" title="Accède aux éléments d&#39;une matrice SKYLINE. " alt="" coords="399,13,488,39"/>
+<area shape="rect" id="node4" href="namespaceskyline.html#a428818245223fbf6e3a5a2264f8f1a65" title="Affiche une matrice SKYLINE. " alt="" coords="536,13,648,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a25b1e027d99abb67ab844d7b657a5843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b1e027d99abb67ab844d7b657a5843">&#9670;&nbsp;</a></span>position_on_s()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer function skyline::position_on_s </td>
+          <td>(</td>
+          <td class="paramtype">class(<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>), intent(in)&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)&#160;</td>
+          <td class="paramname"><em>col</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule la position d'un élément dans le tableau stockant les données. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>Matrice SKYLINE </td></tr>
+    <tr><td class="paramname">row</td><td>Ligne de l'élément </td></tr>
+    <tr><td class="paramname">col</td><td>Colonne de l'élément </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Indice de l'élément dans le tableau de donnée </dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceskyline_a25b1e027d99abb67ab844d7b657a5843_cgraph.png" border="0" usemap="#namespaceskyline_a25b1e027d99abb67ab844d7b657a5843_cgraph" alt=""/></div>
+<map name="namespaceskyline_a25b1e027d99abb67ab844d7b657a5843_cgraph" id="namespaceskyline_a25b1e027d99abb67ab844d7b657a5843_cgraph">
+<area shape="rect" id="node2" href="namespaceskyline.html#a9f07218be321c12bea1d84f6b629e346" title="Calcule le nombre d&#39;élément stocké sur une ligne. " alt="" coords="204,5,351,47"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceskyline_a25b1e027d99abb67ab844d7b657a5843_icgraph.png" border="0" usemap="#namespaceskyline_a25b1e027d99abb67ab844d7b657a5843_icgraph" alt=""/></div>
+<map name="namespaceskyline_a25b1e027d99abb67ab844d7b657a5843_icgraph" id="namespaceskyline_a25b1e027d99abb67ab844d7b657a5843_icgraph">
+<area shape="rect" id="node2" href="namespaceskyline.html#a28077ec6714b830771f90da1b674b0ce" title="Accède aux éléments d&#39;une matrice SKYLINE. " alt="" coords="204,5,293,32"/>
+<area shape="rect" id="node3" href="namespaceskyline.html#a428818245223fbf6e3a5a2264f8f1a65" title="Affiche une matrice SKYLINE. " alt="" coords="341,5,453,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae156a973c4a30bd2740af6ef2fdfa1d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae156a973c4a30bd2740af6ef2fdfa1d9">&#9670;&nbsp;</a></span>prod_mat_vec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function, dimension(:), allocatable skyline::prod_mat_vec </td>
+          <td>(</td>
+          <td class="paramtype">class(<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>)&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, dimension(:), allocatable&#160;</td>
+          <td class="paramname"><em>X</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule Le produit entre une matrice et un vecteur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>Matrice SKYLINE </td></tr>
+    <tr><td class="paramname">X</td><td>Vecteur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Vecteur = M*X </dd></dl>
+
+</div>
+</div>
+<a id="a3377a8391ad2d61659689fc8c4130bdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3377a8391ad2d61659689fc8c4130bdc">&#9670;&nbsp;</a></span>write_skyline_matrix_to_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">subroutine skyline::write_skyline_matrix_to_file </td>
+          <td>(</td>
+          <td class="paramtype">type (<a class="el" href="structskyline_1_1skyline__matrix.html">skyline_matrix</a>)&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">character(len=*), intent(in)&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sauvegarde une matrice SKYLINE dans un fichier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>Matrice à sauvegarder </td></tr>
+    <tr><td class="paramname">filename</td><td>Nom du fichier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

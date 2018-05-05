@@ -1,0 +1,38 @@
+\hypertarget{_s_o_l_v_e_r_8f90}{}\section{Référence du fichier src/\+S\+O\+L\+V\+ER.f90}
+\label{_s_o_l_v_e_r_8f90}\index{src/\+S\+O\+L\+V\+E\+R.\+f90@{src/\+S\+O\+L\+V\+E\+R.\+f90}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \hyperlink{namespacesolver}{solver}
+\begin{DoxyCompactList}\small\item\em Ce module permet de résoudre un problème d\textquotesingle{}éléments fini. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real function \hyperlink{namespacesolver_ab0081bb7880652eb26e65994f13fcb54}{solver\+::a} (x)
+\begin{DoxyCompactList}\small\item\em Fonction A(x) du problème donné \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_a6f4d43c88c7c8ebdea64bd45e002af05}{solver\+::f} (x)
+\begin{DoxyCompactList}\small\item\em Fonction F(x) du problème donné \end{DoxyCompactList}\item 
+logical function \hyperlink{namespacesolver_a2380e35eaa6fcef040f90bb5b23baa6a}{solver\+::is\+\_\+in\+\_\+interval} (x, xmin, xmax)
+\begin{DoxyCompactList}\small\item\em Calcule si une valeur est dans un intervalle donné \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_a3323b7ad7f72685a465733177c82e8cc}{solver\+::phi} (i, x, h, Xdiscret)
+\begin{DoxyCompactList}\small\item\em Fonction de base. \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_add1e5803b09e373fde46731960030e42}{solver\+::phi\+\_\+der} (i, x, h, Xdiscret)
+\begin{DoxyCompactList}\small\item\em Dérivée de la fonction de base. \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af}{solver\+::trapza} (binf, bsup, N)
+\begin{DoxyCompactList}\small\item\em Calcul de l\textquotesingle{}intégrale du terme bilinéaire. \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_adb6590794b23eaed708cd2e42adac550}{solver\+::trapzf} (binf, bsup, N, ix, hx, Xdiscret)
+\begin{DoxyCompactList}\small\item\em Calcul de l\textquotesingle{}intégrale du terme Linéaire. \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_a99565d1c8ed5142211b78fe3ccca060b}{solver\+::b} (i, j, h, Xdiscret, Nitg)
+\begin{DoxyCompactList}\small\item\em Evaluation du terme bilinéaire. \end{DoxyCompactList}\item 
+real function \hyperlink{namespacesolver_a327c990a10263590618db7a31c4edcc9}{solver\+::l} (i, h, Xdiscret, Nitg, alpha1)
+\begin{DoxyCompactList}\small\item\em Evaluation du terme Linéaire. \end{DoxyCompactList}\item 
+type(skyline\+\_\+matrix) function \hyperlink{namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d}{solver\+::create\+\_\+stiffness\+\_\+matrix} (h, Xdiscret, Nitg)
+\begin{DoxyCompactList}\small\item\em Calcul la matrice de rigidité \end{DoxyCompactList}\item 
+real function, dimension(\+:), allocatable \hyperlink{namespacesolver_af45a5f246a818112e6a257335c2b829d}{solver\+::create\+\_\+f\+\_\+matrix} (h, Xdiscret, Nitg, alpha1)
+\begin{DoxyCompactList}\small\item\em Calcule du second membre. \end{DoxyCompactList}\item 
+real function, dimension(\+:), allocatable \hyperlink{namespacesolver_ad8b8ef6c982475b3fb276f93660b750f}{solver\+::solve\+\_\+trig\+\_\+down} (LT, BB)
+\begin{DoxyCompactList}\small\item\em Résouds le système triangulaire inférieur. \end{DoxyCompactList}\item 
+real function, dimension(\+:), allocatable \hyperlink{namespacesolver_a08b8f70c86d7bf39b32ce8fdcc872fd4}{solver\+::solve\+\_\+trig\+\_\+up} (LT, BB)
+\begin{DoxyCompactList}\small\item\em Résouds le système triangulaire supérieur. \end{DoxyCompactList}\item 
+real function, dimension(\+:), allocatable \hyperlink{namespacesolver_af3691d2059a024a82bab7751a99e6006}{solver\+::solve} (LT, BB)
+\begin{DoxyCompactList}\small\item\em Résouds le problème $ LT*Y = BB$. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Solveur Elements Finis/Skyline Matrix: Référence du module cholesky_mod</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Solveur Elements Finis/Skyline Matrix
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Use a sparse matrix storage and Cholesky decomposition to solve a finite elements problems.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions/Subroutines</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du module cholesky_mod</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ce module permet de calculer la décomposition de Cholesky d'une matrice définie positive.  
+<a href="#details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions/Subroutines</h2></td></tr>
+<tr class="memitem:a1cbaf08b2c159febf9d4a76d7819a1cd"><td class="memItemLeft" align="right" valign="top">type(skyline_matrix) function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecholesky__mod.html#a1cbaf08b2c159febf9d4a76d7819a1cd">cholesky</a> (M)</td></tr>
+<tr class="memdesc:a1cbaf08b2c159febf9d4a76d7819a1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la décompostion de Cholesky d'une matrice de type SKYLINE.  <a href="#a1cbaf08b2c159febf9d4a76d7819a1cd">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1cbaf08b2c159febf9d4a76d7819a1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ce module permet de calculer la décomposition de Cholesky d'une matrice définie positive. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Kara Abdelhadi, Mechineau Alexandre </dd></dl>
+</div><h2 class="groupheader">Documentation de la fonction/subroutine</h2>
+<a id="a1cbaf08b2c159febf9d4a76d7819a1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cbaf08b2c159febf9d4a76d7819a1cd">&#9670;&nbsp;</a></span>cholesky()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(skyline_matrix) function cholesky_mod::cholesky </td>
+          <td>(</td>
+          <td class="paramtype">type(skyline_matrix)&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule la décompostion de Cholesky d'une matrice de type SKYLINE. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>Matrice SKYLINE </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Matrice SKYLINE triangulaire supérieure contenant la décomposition </dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacecholesky__mod_a1cbaf08b2c159febf9d4a76d7819a1cd_cgraph.png" border="0" usemap="#namespacecholesky__mod_a1cbaf08b2c159febf9d4a76d7819a1cd_cgraph" alt=""/></div>
+<map name="namespacecholesky__mod_a1cbaf08b2c159febf9d4a76d7819a1cd_cgraph" id="namespacecholesky__mod_a1cbaf08b2c159febf9d4a76d7819a1cd_cgraph">
+<area shape="rect" id="node2" href="namespaceskyline.html#a5fe1d351df2e3a07f96028d1d2a892a8" title="Créé une matrice SKYLINE vide de dimension . " alt="" coords="220,5,375,47"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacecholesky__mod_a1cbaf08b2c159febf9d4a76d7819a1cd_icgraph.png" border="0" usemap="#namespacecholesky__mod_a1cbaf08b2c159febf9d4a76d7819a1cd_icgraph" alt=""/></div>
+<map name="namespacecholesky__mod_a1cbaf08b2c159febf9d4a76d7819a1cd_icgraph" id="namespacecholesky__mod_a1cbaf08b2c159febf9d4a76d7819a1cd_icgraph">
+<area shape="rect" id="node2" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="220,5,271,32"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

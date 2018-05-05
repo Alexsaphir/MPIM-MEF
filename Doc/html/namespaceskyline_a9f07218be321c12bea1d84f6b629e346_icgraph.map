@@ -1,0 +1,5 @@
+<map id="skyline::number_item_on_line" name="skyline::number_item_on_line">
+<area shape="rect" id="node2" href="$namespaceskyline.html#a25b1e027d99abb67ab844d7b657a5843" title="Calcule la position d&#39;un élément dans le tableau stockant les données. " alt="" coords="200,13,351,39"/>
+<area shape="rect" id="node3" href="$namespaceskyline.html#a28077ec6714b830771f90da1b674b0ce" title="Accède aux éléments d&#39;une matrice SKYLINE. " alt="" coords="399,13,488,39"/>
+<area shape="rect" id="node4" href="$namespaceskyline.html#a428818245223fbf6e3a5a2264f8f1a65" title="Affiche une matrice SKYLINE. " alt="" coords="536,13,648,39"/>
+</map>

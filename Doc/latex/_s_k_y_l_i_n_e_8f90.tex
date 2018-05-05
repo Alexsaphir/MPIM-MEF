@@ -1,0 +1,35 @@
+\hypertarget{_s_k_y_l_i_n_e_8f90}{}\section{Référence du fichier src/\+S\+K\+Y\+L\+I\+NE.f90}
+\label{_s_k_y_l_i_n_e_8f90}\index{src/\+S\+K\+Y\+L\+I\+N\+E.\+f90@{src/\+S\+K\+Y\+L\+I\+N\+E.\+f90}}
+\subsection*{Les types de données}
+\begin{DoxyCompactItemize}
+\item 
+type \hyperlink{structskyline_1_1skyline__matrix}{skyline\+::skyline\+\_\+matrix}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \hyperlink{namespaceskyline}{skyline}
+\begin{DoxyCompactList}\small\item\em Ce module permet de stocker une matrice sous la forme d\textquotesingle{}une matrice Skyline (profil) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+type(skyline\+\_\+matrix) function \hyperlink{namespaceskyline_a5fe1d351df2e3a07f96028d1d2a892a8}{skyline\+::create\+\_\+skyline\+\_\+matrix} (m, n)
+\begin{DoxyCompactList}\small\item\em Créé une matrice S\+K\+Y\+L\+I\+NE vide de dimension $(m,n)$. \end{DoxyCompactList}\item 
+type(skyline\+\_\+matrix) function \hyperlink{namespaceskyline_a86a4fe28bc106ef42d25cf7596c108bf}{skyline\+::create\+\_\+skyline\+\_\+matrix\+\_\+from\+\_\+file} (filename)
+\begin{DoxyCompactList}\small\item\em Créé une matrice S\+K\+Y\+L\+I\+NE depuis les données contenus dans un fichier. \end{DoxyCompactList}\item 
+subroutine \hyperlink{namespaceskyline_a3377a8391ad2d61659689fc8c4130bdc}{skyline\+::write\+\_\+skyline\+\_\+matrix\+\_\+to\+\_\+file} (M, filename)
+\begin{DoxyCompactList}\small\item\em Sauvegarde une matrice S\+K\+Y\+L\+I\+NE dans un fichier. \end{DoxyCompactList}\item 
+subroutine \hyperlink{namespaceskyline_a583c70b26e3bcb37ecb679f5c11ec2f4}{skyline\+::free\+\_\+skyline\+\_\+matrix} (M)
+\begin{DoxyCompactList}\small\item\em Supprime les allocations mémoires d\textquotesingle{}une matrice S\+K\+Y\+L\+I\+NE. \end{DoxyCompactList}\item 
+real function \hyperlink{namespaceskyline_a28077ec6714b830771f90da1b674b0ce}{skyline\+::get} (M, row, col)
+\begin{DoxyCompactList}\small\item\em Accède aux éléments d\textquotesingle{}une matrice S\+K\+Y\+L\+I\+NE. \end{DoxyCompactList}\item 
+integer function \hyperlink{namespaceskyline_a25b1e027d99abb67ab844d7b657a5843}{skyline\+::position\+\_\+on\+\_\+s} (M, row, col)
+\begin{DoxyCompactList}\small\item\em Calcule la position d\textquotesingle{}un élément dans le tableau stockant les données. \end{DoxyCompactList}\item 
+integer function \hyperlink{namespaceskyline_a9f07218be321c12bea1d84f6b629e346}{skyline\+::number\+\_\+item\+\_\+on\+\_\+line} (M, row)
+\begin{DoxyCompactList}\small\item\em Calcule le nombre d\textquotesingle{}élément stocké sur une ligne. \end{DoxyCompactList}\item 
+subroutine \hyperlink{namespaceskyline_a428818245223fbf6e3a5a2264f8f1a65}{skyline\+::display} (M)
+\begin{DoxyCompactList}\small\item\em Affiche une matrice S\+K\+Y\+L\+I\+NE. \end{DoxyCompactList}\item 
+subroutine \hyperlink{namespaceskyline_aedb0d55aecd5f4cae4dc3593a5e89f0f}{skyline\+::display\+\_\+debug} (M)
+\begin{DoxyCompactList}\small\item\em Affiche des informations de debuguage d\textquotesingle{}une matrice S\+K\+Y\+L\+I\+NE. \end{DoxyCompactList}\item 
+real function, dimension(\+:), allocatable \hyperlink{namespaceskyline_ae156a973c4a30bd2740af6ef2fdfa1d9}{skyline\+::prod\+\_\+mat\+\_\+vec} (M, X)
+\begin{DoxyCompactList}\small\item\em Calcule Le produit entre une matrice et un vecteur. \end{DoxyCompactList}\end{DoxyCompactItemize}

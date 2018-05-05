@@ -1,0 +1,988 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Solveur Elements Finis/Skyline Matrix: Référence du module solver</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Solveur Elements Finis/Skyline Matrix
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Use a sparse matrix storage and Cholesky decomposition to solve a finite elements problems.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions/Subroutines</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du module solver</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ce module permet de résoudre un problème d'éléments fini.  
+<a href="#details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions/Subroutines</h2></td></tr>
+<tr class="memitem:ab0081bb7880652eb26e65994f13fcb54"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#ab0081bb7880652eb26e65994f13fcb54">a</a> (x)</td></tr>
+<tr class="memdesc:ab0081bb7880652eb26e65994f13fcb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction A(x) du problème donné  <a href="#ab0081bb7880652eb26e65994f13fcb54">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab0081bb7880652eb26e65994f13fcb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4d43c88c7c8ebdea64bd45e002af05"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#a6f4d43c88c7c8ebdea64bd45e002af05">f</a> (x)</td></tr>
+<tr class="memdesc:a6f4d43c88c7c8ebdea64bd45e002af05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction F(x) du problème donné  <a href="#a6f4d43c88c7c8ebdea64bd45e002af05">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6f4d43c88c7c8ebdea64bd45e002af05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2380e35eaa6fcef040f90bb5b23baa6a"><td class="memItemLeft" align="right" valign="top">logical function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#a2380e35eaa6fcef040f90bb5b23baa6a">is_in_interval</a> (x, xmin, xmax)</td></tr>
+<tr class="memdesc:a2380e35eaa6fcef040f90bb5b23baa6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule si une valeur est dans un intervalle donné  <a href="#a2380e35eaa6fcef040f90bb5b23baa6a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2380e35eaa6fcef040f90bb5b23baa6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3323b7ad7f72685a465733177c82e8cc"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#a3323b7ad7f72685a465733177c82e8cc">phi</a> (i, x, h, Xdiscret)</td></tr>
+<tr class="memdesc:a3323b7ad7f72685a465733177c82e8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de base.  <a href="#a3323b7ad7f72685a465733177c82e8cc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3323b7ad7f72685a465733177c82e8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1e5803b09e373fde46731960030e42"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#add1e5803b09e373fde46731960030e42">phi_der</a> (i, x, h, Xdiscret)</td></tr>
+<tr class="memdesc:add1e5803b09e373fde46731960030e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dérivée de la fonction de base.  <a href="#add1e5803b09e373fde46731960030e42">Plus de détails...</a><br /></td></tr>
+<tr class="separator:add1e5803b09e373fde46731960030e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cdc774a6979796cb6b072b2fbb0e5af"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#a5cdc774a6979796cb6b072b2fbb0e5af">trapza</a> (binf, bsup, N)</td></tr>
+<tr class="memdesc:a5cdc774a6979796cb6b072b2fbb0e5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcul de l'intégrale du terme bilinéaire.  <a href="#a5cdc774a6979796cb6b072b2fbb0e5af">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5cdc774a6979796cb6b072b2fbb0e5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6590794b23eaed708cd2e42adac550"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#adb6590794b23eaed708cd2e42adac550">trapzf</a> (binf, bsup, N, ix, hx, Xdiscret)</td></tr>
+<tr class="memdesc:adb6590794b23eaed708cd2e42adac550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcul de l'intégrale du terme Linéaire.  <a href="#adb6590794b23eaed708cd2e42adac550">Plus de détails...</a><br /></td></tr>
+<tr class="separator:adb6590794b23eaed708cd2e42adac550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99565d1c8ed5142211b78fe3ccca060b"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#a99565d1c8ed5142211b78fe3ccca060b">b</a> (i, j, h, Xdiscret, Nitg)</td></tr>
+<tr class="memdesc:a99565d1c8ed5142211b78fe3ccca060b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluation du terme bilinéaire.  <a href="#a99565d1c8ed5142211b78fe3ccca060b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a99565d1c8ed5142211b78fe3ccca060b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327c990a10263590618db7a31c4edcc9"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#a327c990a10263590618db7a31c4edcc9">l</a> (i, h, Xdiscret, Nitg, alpha1)</td></tr>
+<tr class="memdesc:a327c990a10263590618db7a31c4edcc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluation du terme Linéaire.  <a href="#a327c990a10263590618db7a31c4edcc9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a327c990a10263590618db7a31c4edcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd2f88bd66b9d9ccce170259a49c77d"><td class="memItemLeft" align="right" valign="top">type(skyline_matrix) function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#aefd2f88bd66b9d9ccce170259a49c77d">create_stiffness_matrix</a> (h, Xdiscret, Nitg)</td></tr>
+<tr class="memdesc:aefd2f88bd66b9d9ccce170259a49c77d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcul la matrice de rigidité  <a href="#aefd2f88bd66b9d9ccce170259a49c77d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aefd2f88bd66b9d9ccce170259a49c77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af45a5f246a818112e6a257335c2b829d"><td class="memItemLeft" align="right" valign="top">real function, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#af45a5f246a818112e6a257335c2b829d">create_f_matrix</a> (h, Xdiscret, Nitg, alpha1)</td></tr>
+<tr class="memdesc:af45a5f246a818112e6a257335c2b829d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule du second membre.  <a href="#af45a5f246a818112e6a257335c2b829d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af45a5f246a818112e6a257335c2b829d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b8ef6c982475b3fb276f93660b750f"><td class="memItemLeft" align="right" valign="top">real function, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#ad8b8ef6c982475b3fb276f93660b750f">solve_trig_down</a> (LT, BB)</td></tr>
+<tr class="memdesc:ad8b8ef6c982475b3fb276f93660b750f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Résouds le système triangulaire inférieur.  <a href="#ad8b8ef6c982475b3fb276f93660b750f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad8b8ef6c982475b3fb276f93660b750f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b8f70c86d7bf39b32ce8fdcc872fd4"><td class="memItemLeft" align="right" valign="top">real function, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#a08b8f70c86d7bf39b32ce8fdcc872fd4">solve_trig_up</a> (LT, BB)</td></tr>
+<tr class="memdesc:a08b8f70c86d7bf39b32ce8fdcc872fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Résouds le système triangulaire supérieur.  <a href="#a08b8f70c86d7bf39b32ce8fdcc872fd4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a08b8f70c86d7bf39b32ce8fdcc872fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3691d2059a024a82bab7751a99e6006"><td class="memItemLeft" align="right" valign="top">real function, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolver.html#af3691d2059a024a82bab7751a99e6006">solve</a> (LT, BB)</td></tr>
+<tr class="memdesc:af3691d2059a024a82bab7751a99e6006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Résouds le problème <img class="formulaInl" alt="$ LT*Y = BB$" src="form_2.png"/>.  <a href="#af3691d2059a024a82bab7751a99e6006">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af3691d2059a024a82bab7751a99e6006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ce module permet de résoudre un problème d'éléments fini. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Kara Abdelhadi, Mechineau Alexandre </dd></dl>
+</div><h2 class="groupheader">Documentation de la fonction/subroutine</h2>
+<a id="ab0081bb7880652eb26e65994f13fcb54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0081bb7880652eb26e65994f13fcb54">&#9670;&nbsp;</a></span>a()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function solver::a </td>
+          <td>(</td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction A(x) du problème donné </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Réel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>A(x) </dd></dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_ab0081bb7880652eb26e65994f13fcb54_icgraph.png" border="0" usemap="#namespacesolver_ab0081bb7880652eb26e65994f13fcb54_icgraph" alt=""/></div>
+<map name="namespacesolver_ab0081bb7880652eb26e65994f13fcb54_icgraph" id="namespacesolver_ab0081bb7880652eb26e65994f13fcb54_icgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#a5cdc774a6979796cb6b072b2fbb0e5af" title="Calcul de l&#39;intégrale du terme bilinéaire. " alt="" coords="125,15,227,42"/>
+<area shape="rect" id="node6" href="namespacesolver.html#a327c990a10263590618db7a31c4edcc9" title="Evaluation du terme Linéaire. " alt="" coords="277,71,345,98"/>
+<area shape="rect" id="node3" href="namespacesolver.html#a99565d1c8ed5142211b78fe3ccca060b" title="Evaluation du terme bilinéaire. " alt="" coords="275,14,347,41"/>
+<area shape="rect" id="node4" href="namespacesolver.html#aefd2f88bd66b9d9ccce170259a49c77d" title="Calcul la matrice de rigidité " alt="" coords="395,5,553,47"/>
+<area shape="rect" id="node5" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="601,42,652,69"/>
+<area shape="rect" id="node7" href="namespacesolver.html#af45a5f246a818112e6a257335c2b829d" title="Calcule du second membre. " alt="" coords="397,71,551,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a99565d1c8ed5142211b78fe3ccca060b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99565d1c8ed5142211b78fe3ccca060b">&#9670;&nbsp;</a></span>b()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function solver::b </td>
+          <td>(</td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, dimension(:), allocatable&#160;</td>
+          <td class="paramname"><em>Xdiscret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>Nitg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evaluation du terme bilinéaire. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Indice Ligne </td></tr>
+    <tr><td class="paramname">j</td><td>Indice colonne </td></tr>
+    <tr><td class="paramname">h</td><td>Pas du maillage </td></tr>
+    <tr><td class="paramname">Xdiscret</td><td>Maillage </td></tr>
+    <tr><td class="paramname">Nitg</td><td>Précision intégration </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_a99565d1c8ed5142211b78fe3ccca060b_cgraph.png" border="0" usemap="#namespacesolver_a99565d1c8ed5142211b78fe3ccca060b_cgraph" alt=""/></div>
+<map name="namespacesolver_a99565d1c8ed5142211b78fe3ccca060b_cgraph" id="namespacesolver_a99565d1c8ed5142211b78fe3ccca060b_cgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#a5cdc774a6979796cb6b072b2fbb0e5af" title="Calcul de l&#39;intégrale du terme bilinéaire. " alt="" coords="125,5,227,32"/>
+<area shape="rect" id="node3" href="namespacesolver.html#ab0081bb7880652eb26e65994f13fcb54" title="Fonction A(x) du problème donné " alt="" coords="275,5,347,32"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_a99565d1c8ed5142211b78fe3ccca060b_icgraph.png" border="0" usemap="#namespacesolver_a99565d1c8ed5142211b78fe3ccca060b_icgraph" alt=""/></div>
+<map name="namespacesolver_a99565d1c8ed5142211b78fe3ccca060b_icgraph" id="namespacesolver_a99565d1c8ed5142211b78fe3ccca060b_icgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#aefd2f88bd66b9d9ccce170259a49c77d" title="Calcul la matrice de rigidité " alt="" coords="125,5,284,47"/>
+<area shape="rect" id="node3" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="332,13,383,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af45a5f246a818112e6a257335c2b829d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af45a5f246a818112e6a257335c2b829d">&#9670;&nbsp;</a></span>create_f_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function, dimension(:), allocatable solver::create_f_matrix </td>
+          <td>(</td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, dimension(:), allocatable&#160;</td>
+          <td class="paramname"><em>Xdiscret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>Nitg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>alpha1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule du second membre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>Pas du maillage </td></tr>
+    <tr><td class="paramname">Xdiscret</td><td>Maillage </td></tr>
+    <tr><td class="paramname">Nitg</td><td>Précision intégration </td></tr>
+    <tr><td class="paramname">alpha1</td><td>Parametre du problème </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Matrice SKYLINE </dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_af45a5f246a818112e6a257335c2b829d_cgraph.png" border="0" usemap="#namespacesolver_af45a5f246a818112e6a257335c2b829d_cgraph" alt=""/></div>
+<map name="namespacesolver_af45a5f246a818112e6a257335c2b829d_cgraph" id="namespacesolver_af45a5f246a818112e6a257335c2b829d_cgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#a327c990a10263590618db7a31c4edcc9" title="Evaluation du terme Linéaire. " alt="" coords="208,56,276,83"/>
+<area shape="rect" id="node3" href="namespacesolver.html#adb6590794b23eaed708cd2e42adac550" title="Calcul de l&#39;intégrale du terme Linéaire. " alt="" coords="324,5,423,32"/>
+<area shape="rect" id="node5" href="namespacesolver.html#a3323b7ad7f72685a465733177c82e8cc" title="Fonction de base. " alt="" coords="471,56,553,83"/>
+<area shape="rect" id="node7" href="namespacesolver.html#ab0081bb7880652eb26e65994f13fcb54" title="Fonction A(x) du problème donné " alt="" coords="337,107,409,133"/>
+<area shape="rect" id="node4" href="namespacesolver.html#a6f4d43c88c7c8ebdea64bd45e002af05" title="Fonction F(x) du problème donné " alt="" coords="477,5,547,32"/>
+<area shape="rect" id="node6" href="namespacesolver.html#a2380e35eaa6fcef040f90bb5b23baa6a" title="Calcule si une valeur est dans un intervalle donné " alt="" coords="601,56,743,83"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_af45a5f246a818112e6a257335c2b829d_icgraph.png" border="0" usemap="#namespacesolver_af45a5f246a818112e6a257335c2b829d_icgraph" alt=""/></div>
+<map name="namespacesolver_af45a5f246a818112e6a257335c2b829d_icgraph" id="namespacesolver_af45a5f246a818112e6a257335c2b829d_icgraph">
+<area shape="rect" id="node2" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="208,5,259,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aefd2f88bd66b9d9ccce170259a49c77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd2f88bd66b9d9ccce170259a49c77d">&#9670;&nbsp;</a></span>create_stiffness_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(skyline_matrix) function solver::create_stiffness_matrix </td>
+          <td>(</td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, dimension(:), allocatable&#160;</td>
+          <td class="paramname"><em>Xdiscret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>Nitg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcul la matrice de rigidité </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>Pas du maillage </td></tr>
+    <tr><td class="paramname">Xdiscret</td><td>Maillage </td></tr>
+    <tr><td class="paramname">Nitg</td><td>Précision intégration </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Matrice SKYLINE </dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d_cgraph.png" border="0" usemap="#namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d_cgraph" alt=""/></div>
+<map name="namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d_cgraph" id="namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d_cgraph">
+<area shape="rect" id="node2" href="namespaceskyline.html#a5fe1d351df2e3a07f96028d1d2a892a8" title="Créé une matrice SKYLINE vide de dimension . " alt="" coords="212,5,367,47"/>
+<area shape="rect" id="node3" href="namespacesolver.html#a99565d1c8ed5142211b78fe3ccca060b" title="Evaluation du terme bilinéaire. " alt="" coords="253,71,325,98"/>
+<area shape="rect" id="node4" href="namespacesolver.html#a5cdc774a6979796cb6b072b2fbb0e5af" title="Calcul de l&#39;intégrale du terme bilinéaire. " alt="" coords="415,71,516,98"/>
+<area shape="rect" id="node5" href="namespacesolver.html#ab0081bb7880652eb26e65994f13fcb54" title="Fonction A(x) du problème donné " alt="" coords="564,71,636,98"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d_icgraph.png" border="0" usemap="#namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d_icgraph" alt=""/></div>
+<map name="namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d_icgraph" id="namespacesolver_aefd2f88bd66b9d9ccce170259a49c77d_icgraph">
+<area shape="rect" id="node2" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="212,13,263,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6f4d43c88c7c8ebdea64bd45e002af05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f4d43c88c7c8ebdea64bd45e002af05">&#9670;&nbsp;</a></span>f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function solver::f </td>
+          <td>(</td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction F(x) du problème donné </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Réel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>F(x) </dd></dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_a6f4d43c88c7c8ebdea64bd45e002af05_icgraph.png" border="0" usemap="#namespacesolver_a6f4d43c88c7c8ebdea64bd45e002af05_icgraph" alt=""/></div>
+<map name="namespacesolver_a6f4d43c88c7c8ebdea64bd45e002af05_icgraph" id="namespacesolver_a6f4d43c88c7c8ebdea64bd45e002af05_icgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#adb6590794b23eaed708cd2e42adac550" title="Calcul de l&#39;intégrale du terme Linéaire. " alt="" coords="123,5,221,32"/>
+<area shape="rect" id="node3" href="namespacesolver.html#a327c990a10263590618db7a31c4edcc9" title="Evaluation du terme Linéaire. " alt="" coords="269,5,337,32"/>
+<area shape="rect" id="node4" href="namespacesolver.html#af45a5f246a818112e6a257335c2b829d" title="Calcule du second membre. " alt="" coords="385,5,540,32"/>
+<area shape="rect" id="node5" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="588,5,639,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2380e35eaa6fcef040f90bb5b23baa6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2380e35eaa6fcef040f90bb5b23baa6a">&#9670;&nbsp;</a></span>is_in_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical function solver::is_in_interval </td>
+          <td>(</td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>xmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>xmax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule si une valeur est dans un intervalle donné </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Valeur </td></tr>
+    <tr><td class="paramname">xmin</td><td>Borne inf de l'intervalle </td></tr>
+    <tr><td class="paramname">xmax</td><td>Borne max de l'intervalle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>LOGICAL </dd></dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_a2380e35eaa6fcef040f90bb5b23baa6a_icgraph.png" border="0" usemap="#namespacesolver_a2380e35eaa6fcef040f90bb5b23baa6a_icgraph" alt=""/></div>
+<map name="namespacesolver_a2380e35eaa6fcef040f90bb5b23baa6a_icgraph" id="namespacesolver_a2380e35eaa6fcef040f90bb5b23baa6a_icgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#a3323b7ad7f72685a465733177c82e8cc" title="Fonction de base. " alt="" coords="207,31,289,57"/>
+<area shape="rect" id="node7" href="namespacesolver.html#add1e5803b09e373fde46731960030e42" title="Dérivée de la fonction de base. " alt="" coords="195,81,301,108"/>
+<area shape="rect" id="node3" href="namespacesolver.html#adb6590794b23eaed708cd2e42adac550" title="Calcul de l&#39;intégrale du terme Linéaire. " alt="" coords="349,5,448,32"/>
+<area shape="rect" id="node4" href="namespacesolver.html#a327c990a10263590618db7a31c4edcc9" title="Evaluation du terme Linéaire. " alt="" coords="496,31,564,57"/>
+<area shape="rect" id="node5" href="namespacesolver.html#af45a5f246a818112e6a257335c2b829d" title="Calcule du second membre. " alt="" coords="612,31,767,57"/>
+<area shape="rect" id="node6" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="815,31,865,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a327c990a10263590618db7a31c4edcc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327c990a10263590618db7a31c4edcc9">&#9670;&nbsp;</a></span>l()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function solver::l </td>
+          <td>(</td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, dimension(:), allocatable&#160;</td>
+          <td class="paramname"><em>Xdiscret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>Nitg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>alpha1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evaluation du terme Linéaire. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Indice ligne </td></tr>
+    <tr><td class="paramname">h</td><td>Pas du maillage </td></tr>
+    <tr><td class="paramname">Xdiscret</td><td>Maillage </td></tr>
+    <tr><td class="paramname">Nitg</td><td>Précision intégration </td></tr>
+    <tr><td class="paramname">alpha1</td><td>Parametre du problème </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_a327c990a10263590618db7a31c4edcc9_cgraph.png" border="0" usemap="#namespacesolver_a327c990a10263590618db7a31c4edcc9_cgraph" alt=""/></div>
+<map name="namespacesolver_a327c990a10263590618db7a31c4edcc9_cgraph" id="namespacesolver_a327c990a10263590618db7a31c4edcc9_cgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#adb6590794b23eaed708cd2e42adac550" title="Calcul de l&#39;intégrale du terme Linéaire. " alt="" coords="121,5,220,32"/>
+<area shape="rect" id="node4" href="namespacesolver.html#a3323b7ad7f72685a465733177c82e8cc" title="Fonction de base. " alt="" coords="268,56,351,83"/>
+<area shape="rect" id="node6" href="namespacesolver.html#ab0081bb7880652eb26e65994f13fcb54" title="Fonction A(x) du problème donné " alt="" coords="135,107,207,133"/>
+<area shape="rect" id="node3" href="namespacesolver.html#a6f4d43c88c7c8ebdea64bd45e002af05" title="Fonction F(x) du problème donné " alt="" coords="275,5,344,32"/>
+<area shape="rect" id="node5" href="namespacesolver.html#a2380e35eaa6fcef040f90bb5b23baa6a" title="Calcule si une valeur est dans un intervalle donné " alt="" coords="399,56,540,83"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_a327c990a10263590618db7a31c4edcc9_icgraph.png" border="0" usemap="#namespacesolver_a327c990a10263590618db7a31c4edcc9_icgraph" alt=""/></div>
+<map name="namespacesolver_a327c990a10263590618db7a31c4edcc9_icgraph" id="namespacesolver_a327c990a10263590618db7a31c4edcc9_icgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#af45a5f246a818112e6a257335c2b829d" title="Calcule du second membre. " alt="" coords="121,5,276,32"/>
+<area shape="rect" id="node3" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="324,5,375,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3323b7ad7f72685a465733177c82e8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3323b7ad7f72685a465733177c82e8cc">&#9670;&nbsp;</a></span>phi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function solver::phi </td>
+          <td>(</td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, dimension(:), allocatable&#160;</td>
+          <td class="paramname"><em>Xdiscret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction de base. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Indice de la fonction </td></tr>
+    <tr><td class="paramname">x</td><td>Valeur d'évaluation </td></tr>
+    <tr><td class="paramname">h</td><td>Pas de discrétisation </td></tr>
+    <tr><td class="paramname">Xdiscret</td><td>Maillage </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Evaluation de <img class="formulaInl" alt="$PHI_i$" src="form_1.png"/> en x </dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_a3323b7ad7f72685a465733177c82e8cc_cgraph.png" border="0" usemap="#namespacesolver_a3323b7ad7f72685a465733177c82e8cc_cgraph" alt=""/></div>
+<map name="namespacesolver_a3323b7ad7f72685a465733177c82e8cc_cgraph" id="namespacesolver_a3323b7ad7f72685a465733177c82e8cc_cgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#a2380e35eaa6fcef040f90bb5b23baa6a" title="Calcule si une valeur est dans un intervalle donné " alt="" coords="136,5,277,32"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_a3323b7ad7f72685a465733177c82e8cc_icgraph.png" border="0" usemap="#namespacesolver_a3323b7ad7f72685a465733177c82e8cc_icgraph" alt=""/></div>
+<map name="namespacesolver_a3323b7ad7f72685a465733177c82e8cc_icgraph" id="namespacesolver_a3323b7ad7f72685a465733177c82e8cc_icgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#adb6590794b23eaed708cd2e42adac550" title="Calcul de l&#39;intégrale du terme Linéaire. " alt="" coords="136,5,235,32"/>
+<area shape="rect" id="node3" href="namespacesolver.html#a327c990a10263590618db7a31c4edcc9" title="Evaluation du terme Linéaire. " alt="" coords="283,31,351,57"/>
+<area shape="rect" id="node4" href="namespacesolver.html#af45a5f246a818112e6a257335c2b829d" title="Calcule du second membre. " alt="" coords="399,31,553,57"/>
+<area shape="rect" id="node5" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="601,31,652,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="add1e5803b09e373fde46731960030e42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1e5803b09e373fde46731960030e42">&#9670;&nbsp;</a></span>phi_der()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function solver::phi_der </td>
+          <td>(</td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, dimension(:), allocatable&#160;</td>
+          <td class="paramname"><em>Xdiscret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dérivée de la fonction de base. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Indice de la fonction </td></tr>
+    <tr><td class="paramname">x</td><td>Valeur d'évaluation </td></tr>
+    <tr><td class="paramname">h</td><td>Pas de discrétisation </td></tr>
+    <tr><td class="paramname">Xdiscret</td><td>Maillage </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Evaluation de la dérivée de <img class="formulaInl" alt="$PHI_i$" src="form_1.png"/> en x </dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_add1e5803b09e373fde46731960030e42_cgraph.png" border="0" usemap="#namespacesolver_add1e5803b09e373fde46731960030e42_cgraph" alt=""/></div>
+<map name="namespacesolver_add1e5803b09e373fde46731960030e42_cgraph" id="namespacesolver_add1e5803b09e373fde46731960030e42_cgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#a2380e35eaa6fcef040f90bb5b23baa6a" title="Calcule si une valeur est dans un intervalle donné " alt="" coords="160,5,301,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af3691d2059a024a82bab7751a99e6006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3691d2059a024a82bab7751a99e6006">&#9670;&nbsp;</a></span>solve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function, dimension(:), allocatable solver::solve </td>
+          <td>(</td>
+          <td class="paramtype">type(skyline_matrix)&#160;</td>
+          <td class="paramname"><em>LT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, dimension(:), allocatable&#160;</td>
+          <td class="paramname"><em>BB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Résouds le problème <img class="formulaInl" alt="$ LT*Y = BB$" src="form_2.png"/>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">LT</td><td>Matrice SKYLINE </td></tr>
+    <tr><td class="paramname">BB</td><td>second membre </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Vecteur Solution </dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_af3691d2059a024a82bab7751a99e6006_cgraph.png" border="0" usemap="#namespacesolver_af3691d2059a024a82bab7751a99e6006_cgraph" alt=""/></div>
+<map name="namespacesolver_af3691d2059a024a82bab7751a99e6006_cgraph" id="namespacesolver_af3691d2059a024a82bab7751a99e6006_cgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#ad8b8ef6c982475b3fb276f93660b750f" title="Résouds le système triangulaire inférieur. " alt="" coords="149,5,308,32"/>
+<area shape="rect" id="node3" href="namespacesolver.html#a08b8f70c86d7bf39b32ce8fdcc872fd4" title="Résouds le système triangulaire supérieur. " alt="" coords="157,56,300,83"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_af3691d2059a024a82bab7751a99e6006_icgraph.png" border="0" usemap="#namespacesolver_af3691d2059a024a82bab7751a99e6006_icgraph" alt=""/></div>
+<map name="namespacesolver_af3691d2059a024a82bab7751a99e6006_icgraph" id="namespacesolver_af3691d2059a024a82bab7751a99e6006_icgraph">
+<area shape="rect" id="node2" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="149,5,200,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad8b8ef6c982475b3fb276f93660b750f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b8ef6c982475b3fb276f93660b750f">&#9670;&nbsp;</a></span>solve_trig_down()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function, dimension(:), allocatable solver::solve_trig_down </td>
+          <td>(</td>
+          <td class="paramtype">type(skyline_matrix)&#160;</td>
+          <td class="paramname"><em>LT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, dimension(:), allocatable&#160;</td>
+          <td class="paramname"><em>BB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Résouds le système triangulaire inférieur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">LT</td><td>Matrice SKYLINE </td></tr>
+    <tr><td class="paramname">BB</td><td>second membre </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Vecteur Solution </dd></dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_ad8b8ef6c982475b3fb276f93660b750f_icgraph.png" border="0" usemap="#namespacesolver_ad8b8ef6c982475b3fb276f93660b750f_icgraph" alt=""/></div>
+<map name="namespacesolver_ad8b8ef6c982475b3fb276f93660b750f_icgraph" id="namespacesolver_ad8b8ef6c982475b3fb276f93660b750f_icgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#af3691d2059a024a82bab7751a99e6006" title="Résouds le problème . " alt="" coords="212,5,308,32"/>
+<area shape="rect" id="node3" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="356,5,407,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a08b8f70c86d7bf39b32ce8fdcc872fd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b8f70c86d7bf39b32ce8fdcc872fd4">&#9670;&nbsp;</a></span>solve_trig_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function, dimension(:), allocatable solver::solve_trig_up </td>
+          <td>(</td>
+          <td class="paramtype">type(skyline_matrix)&#160;</td>
+          <td class="paramname"><em>LT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, dimension(:), allocatable&#160;</td>
+          <td class="paramname"><em>BB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Résouds le système triangulaire supérieur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">LT</td><td>Matrice SKYLINE </td></tr>
+    <tr><td class="paramname">BB</td><td>second membre </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Vecteur Solution </dd></dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_a08b8f70c86d7bf39b32ce8fdcc872fd4_icgraph.png" border="0" usemap="#namespacesolver_a08b8f70c86d7bf39b32ce8fdcc872fd4_icgraph" alt=""/></div>
+<map name="namespacesolver_a08b8f70c86d7bf39b32ce8fdcc872fd4_icgraph" id="namespacesolver_a08b8f70c86d7bf39b32ce8fdcc872fd4_icgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#af3691d2059a024a82bab7751a99e6006" title="Résouds le problème . " alt="" coords="196,5,292,32"/>
+<area shape="rect" id="node3" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="340,5,391,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5cdc774a6979796cb6b072b2fbb0e5af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cdc774a6979796cb6b072b2fbb0e5af">&#9670;&nbsp;</a></span>trapza()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function solver::trapza </td>
+          <td>(</td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>binf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>bsup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>N</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcul de l'intégrale du terme bilinéaire. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">binf</td><td>Borne inf </td></tr>
+    <tr><td class="paramname">bsup</td><td>Borne sup </td></tr>
+    <tr><td class="paramname">N</td><td>Précision de l'intégrale </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Valeur de l'intégrale </dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af_cgraph.png" border="0" usemap="#namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af_cgraph" alt=""/></div>
+<map name="namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af_cgraph" id="namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af_cgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#ab0081bb7880652eb26e65994f13fcb54" title="Fonction A(x) du problème donné " alt="" coords="155,5,227,32"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af_icgraph.png" border="0" usemap="#namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af_icgraph" alt=""/></div>
+<map name="namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af_icgraph" id="namespacesolver_a5cdc774a6979796cb6b072b2fbb0e5af_icgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#a99565d1c8ed5142211b78fe3ccca060b" title="Evaluation du terme bilinéaire. " alt="" coords="155,13,227,39"/>
+<area shape="rect" id="node3" href="namespacesolver.html#aefd2f88bd66b9d9ccce170259a49c77d" title="Calcul la matrice de rigidité " alt="" coords="275,5,433,47"/>
+<area shape="rect" id="node4" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="481,13,532,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adb6590794b23eaed708cd2e42adac550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb6590794b23eaed708cd2e42adac550">&#9670;&nbsp;</a></span>trapzf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real function solver::trapzf </td>
+          <td>(</td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>binf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>bsup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>ix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>hx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, dimension(:), allocatable&#160;</td>
+          <td class="paramname"><em>Xdiscret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcul de l'intégrale du terme Linéaire. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">binf</td><td>Borne inf </td></tr>
+    <tr><td class="paramname">bsup</td><td>Borne sup </td></tr>
+    <tr><td class="paramname">N</td><td>Précision de l'intégrale </td></tr>
+    <tr><td class="paramname">ix</td><td>Indice de la fonction PHI </td></tr>
+    <tr><td class="paramname">hx</td><td>Pas du maillage </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Valeur de l'intégrale </dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_adb6590794b23eaed708cd2e42adac550_cgraph.png" border="0" usemap="#namespacesolver_adb6590794b23eaed708cd2e42adac550_cgraph" alt=""/></div>
+<map name="namespacesolver_adb6590794b23eaed708cd2e42adac550_cgraph" id="namespacesolver_adb6590794b23eaed708cd2e42adac550_cgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#a6f4d43c88c7c8ebdea64bd45e002af05" title="Fonction F(x) du problème donné " alt="" coords="159,5,228,32"/>
+<area shape="rect" id="node3" href="namespacesolver.html#a3323b7ad7f72685a465733177c82e8cc" title="Fonction de base. " alt="" coords="152,56,235,83"/>
+<area shape="rect" id="node4" href="namespacesolver.html#a2380e35eaa6fcef040f90bb5b23baa6a" title="Calcule si une valeur est dans un intervalle donné " alt="" coords="283,56,424,83"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesolver_adb6590794b23eaed708cd2e42adac550_icgraph.png" border="0" usemap="#namespacesolver_adb6590794b23eaed708cd2e42adac550_icgraph" alt=""/></div>
+<map name="namespacesolver_adb6590794b23eaed708cd2e42adac550_icgraph" id="namespacesolver_adb6590794b23eaed708cd2e42adac550_icgraph">
+<area shape="rect" id="node2" href="namespacesolver.html#a327c990a10263590618db7a31c4edcc9" title="Evaluation du terme Linéaire. " alt="" coords="152,5,220,32"/>
+<area shape="rect" id="node3" href="namespacesolver.html#af45a5f246a818112e6a257335c2b829d" title="Calcule du second membre. " alt="" coords="268,5,423,32"/>
+<area shape="rect" id="node4" href="main_8f90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="471,5,521,32"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

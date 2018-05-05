@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Solveur Elements Finis/Skyline Matrix: Référence du fichier src/SKYLINE.f90</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Solveur Elements Finis/Skyline Matrix
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Use a sparse matrix storage and Cholesky decomposition to solve a finite elements problems.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Les types de données</a> &#124;
+<a href="#namespaces">Modules</a> &#124;
+<a href="#func-members">Fonctions/Subroutines</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier SKYLINE.f90</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Les types de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">type &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskyline_1_1skyline__matrix.html">skyline::skyline_matrix</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Modules</h2></td></tr>
+<tr class="memitem:namespaceskyline"><td class="memItemLeft" align="right" valign="top">module &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html">skyline</a></td></tr>
+<tr class="memdesc:namespaceskyline"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ce module permet de stocker une matrice sous la forme d'une matrice Skyline (profil) <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions/Subroutines</h2></td></tr>
+<tr class="memitem:a5fe1d351df2e3a07f96028d1d2a892a8"><td class="memItemLeft" align="right" valign="top">type(skyline_matrix) function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a5fe1d351df2e3a07f96028d1d2a892a8">skyline::create_skyline_matrix</a> (m, n)</td></tr>
+<tr class="memdesc:a5fe1d351df2e3a07f96028d1d2a892a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Créé une matrice SKYLINE vide de dimension <img class="formulaInl" alt="$(m,n)$" src="form_0.png"/>.  <a href="namespaceskyline.html#a5fe1d351df2e3a07f96028d1d2a892a8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5fe1d351df2e3a07f96028d1d2a892a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a4fe28bc106ef42d25cf7596c108bf"><td class="memItemLeft" align="right" valign="top">type(skyline_matrix) function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a86a4fe28bc106ef42d25cf7596c108bf">skyline::create_skyline_matrix_from_file</a> (filename)</td></tr>
+<tr class="memdesc:a86a4fe28bc106ef42d25cf7596c108bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Créé une matrice SKYLINE depuis les données contenus dans un fichier.  <a href="namespaceskyline.html#a86a4fe28bc106ef42d25cf7596c108bf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a86a4fe28bc106ef42d25cf7596c108bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3377a8391ad2d61659689fc8c4130bdc"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a3377a8391ad2d61659689fc8c4130bdc">skyline::write_skyline_matrix_to_file</a> (M, filename)</td></tr>
+<tr class="memdesc:a3377a8391ad2d61659689fc8c4130bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sauvegarde une matrice SKYLINE dans un fichier.  <a href="namespaceskyline.html#a3377a8391ad2d61659689fc8c4130bdc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3377a8391ad2d61659689fc8c4130bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583c70b26e3bcb37ecb679f5c11ec2f4"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a583c70b26e3bcb37ecb679f5c11ec2f4">skyline::free_skyline_matrix</a> (M)</td></tr>
+<tr class="memdesc:a583c70b26e3bcb37ecb679f5c11ec2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime les allocations mémoires d'une matrice SKYLINE.  <a href="namespaceskyline.html#a583c70b26e3bcb37ecb679f5c11ec2f4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a583c70b26e3bcb37ecb679f5c11ec2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28077ec6714b830771f90da1b674b0ce"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a28077ec6714b830771f90da1b674b0ce">skyline::get</a> (M, row, col)</td></tr>
+<tr class="memdesc:a28077ec6714b830771f90da1b674b0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accède aux éléments d'une matrice SKYLINE.  <a href="namespaceskyline.html#a28077ec6714b830771f90da1b674b0ce">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a28077ec6714b830771f90da1b674b0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b1e027d99abb67ab844d7b657a5843"><td class="memItemLeft" align="right" valign="top">integer function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a25b1e027d99abb67ab844d7b657a5843">skyline::position_on_s</a> (M, row, col)</td></tr>
+<tr class="memdesc:a25b1e027d99abb67ab844d7b657a5843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la position d'un élément dans le tableau stockant les données.  <a href="namespaceskyline.html#a25b1e027d99abb67ab844d7b657a5843">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a25b1e027d99abb67ab844d7b657a5843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f07218be321c12bea1d84f6b629e346"><td class="memItemLeft" align="right" valign="top">integer function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a9f07218be321c12bea1d84f6b629e346">skyline::number_item_on_line</a> (M, row)</td></tr>
+<tr class="memdesc:a9f07218be321c12bea1d84f6b629e346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule le nombre d'élément stocké sur une ligne.  <a href="namespaceskyline.html#a9f07218be321c12bea1d84f6b629e346">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9f07218be321c12bea1d84f6b629e346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428818245223fbf6e3a5a2264f8f1a65"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#a428818245223fbf6e3a5a2264f8f1a65">skyline::display</a> (M)</td></tr>
+<tr class="memdesc:a428818245223fbf6e3a5a2264f8f1a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche une matrice SKYLINE.  <a href="namespaceskyline.html#a428818245223fbf6e3a5a2264f8f1a65">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a428818245223fbf6e3a5a2264f8f1a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb0d55aecd5f4cae4dc3593a5e89f0f"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#aedb0d55aecd5f4cae4dc3593a5e89f0f">skyline::display_debug</a> (M)</td></tr>
+<tr class="memdesc:aedb0d55aecd5f4cae4dc3593a5e89f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche des informations de debuguage d'une matrice SKYLINE.  <a href="namespaceskyline.html#aedb0d55aecd5f4cae4dc3593a5e89f0f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aedb0d55aecd5f4cae4dc3593a5e89f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae156a973c4a30bd2740af6ef2fdfa1d9"><td class="memItemLeft" align="right" valign="top">real function, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceskyline.html#ae156a973c4a30bd2740af6ef2fdfa1d9">skyline::prod_mat_vec</a> (M, X)</td></tr>
+<tr class="memdesc:ae156a973c4a30bd2740af6ef2fdfa1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule Le produit entre une matrice et un vecteur.  <a href="namespaceskyline.html#ae156a973c4a30bd2740af6ef2fdfa1d9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae156a973c4a30bd2740af6ef2fdfa1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
