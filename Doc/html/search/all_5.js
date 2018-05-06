@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['get',['get',['../structskyline_1_1skyline__matrix.html#a3b8d47decbf713171eb82625a51fbcd1',1,'skyline::skyline_matrix::get()'],['../namespaceskyline.html#a28077ec6714b830771f90da1b674b0ce',1,'skyline::get()']]]
+  ['f',['f',['../namespacesolver.html#a6f4d43c88c7c8ebdea64bd45e002af05',1,'solver']]],
+  ['free_5fskyline_5fmatrix',['free_skyline_matrix',['../namespaceskyline.html#a583c70b26e3bcb37ecb679f5c11ec2f4',1,'skyline']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['write_5fskyline_5fmatrix_5fto_5ffile',['write_skyline_matrix_to_file',['../namespaceskyline.html#a3377a8391ad2d61659689fc8c4130bdc',1,'skyline']]]
+  ['trapza',['trapza',['../namespacesolver.html#a5cdc774a6979796cb6b072b2fbb0e5af',1,'solver']]],
+  ['trapzf',['trapzf',['../namespacesolver.html#adb6590794b23eaed708cd2e42adac550',1,'solver']]]
 ];

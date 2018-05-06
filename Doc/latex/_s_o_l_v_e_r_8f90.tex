@@ -1,11 +1,11 @@
-\hypertarget{_s_o_l_v_e_r_8f90}{}\section{Référence du fichier src/\+S\+O\+L\+V\+ER.f90}
+\hypertarget{_s_o_l_v_e_r_8f90}{}\section{src/\+S\+O\+L\+V\+ER.f90 File Reference}
 \label{_s_o_l_v_e_r_8f90}\index{src/\+S\+O\+L\+V\+E\+R.\+f90@{src/\+S\+O\+L\+V\+E\+R.\+f90}}
 \subsection*{Modules}
 \begin{DoxyCompactItemize}
 \item 
 module \hyperlink{namespacesolver}{solver}
 \begin{DoxyCompactList}\small\item\em Ce module permet de résoudre un problème d\textquotesingle{}éléments fini. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Fonctions/\+Subroutines}
+\subsection*{Functions/\+Subroutines}
 \begin{DoxyCompactItemize}
 \item 
 real function \hyperlink{namespacesolver_ab0081bb7880652eb26e65994f13fcb54}{solver\+::a} (x)
@@ -35,4 +35,6 @@ real function, dimension(\+:), allocatable \hyperlink{namespacesolver_ad8b8ef6c9
 real function, dimension(\+:), allocatable \hyperlink{namespacesolver_a08b8f70c86d7bf39b32ce8fdcc872fd4}{solver\+::solve\+\_\+trig\+\_\+up} (LT, BB)
 \begin{DoxyCompactList}\small\item\em Résouds le système triangulaire supérieur. \end{DoxyCompactList}\item 
 real function, dimension(\+:), allocatable \hyperlink{namespacesolver_af3691d2059a024a82bab7751a99e6006}{solver\+::solve} (LT, BB)
-\begin{DoxyCompactList}\small\item\em Résouds le problème $ LT*Y = BB$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Résouds le problème $ LT*Y = BB$. \end{DoxyCompactList}\item 
+subroutine \hyperlink{namespacesolver_a2456ddba19a0992671f59ac396d4c1f1}{solver\+::export\+\_\+solution} (Xdiscret, U, filename)
+\begin{DoxyCompactList}\small\item\em Enregistre un vecteur solution dans un fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}

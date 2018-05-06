@@ -1,19 +1,19 @@
 var menudata={children:[
-{text:"Page principale",url:"index.html"},
+{text:"Main Page",url:"index.html"},
 {text:"Modules",url:"namespaces.html",children:[
-{text:"Liste des modules",url:"namespaces.html"},
-{text:"Membres du module",url:"namespacemembers.html",children:[
-{text:"Tout",url:"namespacemembers.html"},
-{text:"Fonctions/Subroutines",url:"namespacemembers_func.html"}]}]},
-{text:"Liste des types de données",url:"annotated.html",children:[
-{text:"Liste des types de données",url:"annotated.html"},
-{text:"Les types de données",url:"classes.html"},
-{text:"Champs de données",url:"functions.html",children:[
-{text:"Tout",url:"functions.html"},
-{text:"Fonctions/Subroutines",url:"functions_func.html"},
+{text:"Modules List",url:"namespaces.html"},
+{text:"Module Members",url:"namespacemembers.html",children:[
+{text:"All",url:"namespacemembers.html"},
+{text:"Functions/Subroutines",url:"namespacemembers_func.html"}]}]},
+{text:"Data Types List",url:"annotated.html",children:[
+{text:"Data Types List",url:"annotated.html"},
+{text:"Data Types",url:"classes.html"},
+{text:"Data Fields",url:"functions.html",children:[
+{text:"All",url:"functions.html"},
+{text:"Functions/Subroutines",url:"functions_func.html"},
 {text:"Variables",url:"functions_vars.html"}]}]},
-{text:"Fichiers",url:"files.html",children:[
-{text:"Liste des fichiers",url:"files.html"},
-{text:"Membres de fichier",url:"globals.html",children:[
-{text:"Tout",url:"globals.html"},
-{text:"Fonctions/Subroutines",url:"globals_func.html"}]}]}]}
+{text:"Files",url:"files.html",children:[
+{text:"File List",url:"files.html"},
+{text:"File Members",url:"globals.html",children:[
+{text:"All",url:"globals.html"},
+{text:"Functions/Subroutines",url:"globals_func.html"}]}]}]}

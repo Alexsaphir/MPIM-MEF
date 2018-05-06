@@ -3,7 +3,8 @@
 <area shape="rect" id="node7" href="$namespacesolver.html#af45a5f246a818112e6a257335c2b829d" title="Calcule du second membre. " alt="" coords="110,130,265,157"/>
 <area shape="rect" id="node13" href="$namespacecholesky__mod.html#a1cbaf08b2c159febf9d4a76d7819a1cd" title="Calcule la décompostion de Cholesky d&#39;une matrice de type SKYLINE. " alt="" coords="104,13,271,39"/>
 <area shape="rect" id="node14" href="$namespacesolver.html#af3691d2059a024a82bab7751a99e6006" title="Résouds le problème . " alt="" coords="139,181,235,207"/>
-<area shape="rect" id="node17" href="$namespaceskyline.html#a583c70b26e3bcb37ecb679f5c11ec2f4" title="Supprime les allocations mémoires d&#39;une matrice SKYLINE. " alt="" coords="117,232,258,273"/>
+<area shape="rect" id="node17" href="$namespacesolver.html#a2456ddba19a0992671f59ac396d4c1f1" title="Enregistre un vecteur solution dans un fichier. " alt="" coords="111,231,264,258"/>
+<area shape="rect" id="node18" href="$namespaceskyline.html#a583c70b26e3bcb37ecb679f5c11ec2f4" title="Supprime les allocations mémoires d&#39;une matrice SKYLINE. " alt="" coords="117,283,258,324"/>
 <area shape="rect" id="node3" href="$namespaceskyline.html#a5fe1d351df2e3a07f96028d1d2a892a8" title="Créé une matrice SKYLINE vide de dimension . " alt="" coords="321,5,475,47"/>
 <area shape="rect" id="node4" href="$namespacesolver.html#a99565d1c8ed5142211b78fe3ccca060b" title="Evaluation du terme bilinéaire. " alt="" coords="362,71,434,98"/>
 <area shape="rect" id="node5" href="$namespacesolver.html#a5cdc774a6979796cb6b072b2fbb0e5af" title="Calcul de l&#39;intégrale du terme bilinéaire. " alt="" coords="525,50,627,77"/>
