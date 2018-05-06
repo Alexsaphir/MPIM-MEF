@@ -17,7 +17,7 @@ CONTAINS
 		
 		REAL :: A
 		
-		A = x
+		A = SIN(2.*x) * x
 	END FUNCTION A
 	
 	!> Fonction F(x) du problème donné
@@ -28,7 +28,7 @@ CONTAINS
 		
 		REAL :: F
 		
-		F = x**2
+		F = COS(3.*x)
 		
 	END FUNCTION F
 	
@@ -390,4 +390,26 @@ CONTAINS
 		Y = SOLVE_TRIG_DOWN(LT, BB)
 		Y = SOLVE_TRIG_UP(LT, Y)
 	END FUNCTION SOLVE
+	
+	!> Enregistre un vecteur solution dans un fichier
+	!! \param Xdiscret Discrétisation espace
+	!! \param U Vecteur solution
+	!! \param filename Nom du fichier
+	SUBROUTINE EXPORT_SOLUTION(Xdiscret, U, filename)
+	        REAL , DIMENSION(:), ALLOCATABLE :: Xdiscret
+		REAL , DIMENSION(:), ALLOCATABLE :: U
+		character(len=*), intent(in)    :: filename
+		
+		INTEGER, PARAMETER      :: out_unit = 20
+                INTEGER                 :: i
+                
+                
+                open (unit=out_unit,file=filename,action="write",status="replace")
+                
+                WRITE(out_unit,*) "x,y"
+                DO i =1, SIZE(U),1
+                        WRITE(out_unit,*) Xdiscret(i),",", U(i)
+                ENDDO
+                CLOSE (out_unit)
+	END SUBROUTINE EXPORT_SOLUTION
 END MODULE SOLVER

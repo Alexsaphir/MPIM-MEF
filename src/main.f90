@@ -21,7 +21,7 @@ PROGRAM MAIN
         
         REAL :: alpha1, h
         INTEGER :: Nitg
-        N = 50
+        N = 100
         
         
         ! Définition de la discrétisation 
@@ -32,7 +32,7 @@ PROGRAM MAIN
         ENDDO
         
         alpha1 = 1.
-        Nitg = 10
+        Nitg = 50
         
         ! Création des matrices décrivant le problème variationnel discret
         S_K = CREATE_STIFFNESS_MATRIX(h, Xdiscret, Nitg)
@@ -44,6 +44,7 @@ PROGRAM MAIN
         ! Résolution du probleme variationnel discret
         S_U = SOLVE(S_K, S_F)
         
+        CALL EXPORT_SOLUTION(Xdiscret, S_U, "result.csv")
         ! Libération mémoire
 	DEALLOCATE(S_U)
 	DEALLOCATE(S_F)
